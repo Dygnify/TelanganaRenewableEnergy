@@ -5,18 +5,18 @@ const DashboardChart2 = () => {
 	const options = {
 		chart: {
 			id: "area-chart",
-			zoom: {
-				enabled: false,
-			},
 			toolbar: {
 				show: false,
 			},
+			zoom: {
+				enabled: false,
+			},
 		},
 		xaxis: {
+			categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
 			labels: {
 				show: false,
 			},
-			categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
 		},
 		yaxis: {
 			labels: {
@@ -27,12 +27,11 @@ const DashboardChart2 = () => {
 			type: "gradient",
 			gradient: {
 				shade: "dark",
-				gradientToColors: ["#FFA500", "#008000"],
+				gradientToColors: ["red"],
 				shadeIntensity: 1,
 				type: "horizontal",
 				opacityFrom: 1,
 				opacityTo: 1,
-				stops: [0, 100],
 			},
 		},
 		dataLabels: {
@@ -40,9 +39,8 @@ const DashboardChart2 = () => {
 		},
 		stroke: {
 			curve: "smooth",
-			width: 0, // set width to 0 to remove curve border
+			width: 0,
 		},
-        
 		grid: {
 			show: false,
 			strokeDashArray: 0,
@@ -68,27 +66,30 @@ const DashboardChart2 = () => {
 			padding: {
 				top: 0,
 				right: 0,
-				bottom: 0,
+				bottom: -20,
 				left: -10,
 			},
 		},
+		colors: ["#fcb045", "#ff6464"], // custom color palett
 	};
 
 	const series = [
 		{
 			name: "series-1",
-			data: [50, 40, 45, 60, 49, 70, 70, 91, 125],
+			
+			data: [20, 30, 40, 30, 52, 48, 60, 51, 105],
 		},
 	];
 
 	return (
-		<div className="w-full box-shadow rounded-md relative">
+		<div
+			className="w-full box-shadow rounded-md relative bg-[#cbeaffbb]"
+			data-aos="zoom-in"
+			data-aos-duration="1000"
+		>
 			<ReactApexChart options={options} series={series} type="area" />
-			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-orange-900">
-				<span>Temperature </span>
-				<span>
-					42<sup className="text-orange-800 text-xs">0</sup>
-				</span>
+			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-font-semibold text-slate-500 drop-shadow-lg">
+				<span>Energy Consume</span>
 			</p>
 		</div>
 	);

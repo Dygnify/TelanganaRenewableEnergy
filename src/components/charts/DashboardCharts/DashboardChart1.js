@@ -13,7 +13,7 @@ const DashboardChart1 = () => {
 			},
 		},
 		xaxis: {
-			categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+			categories: [1991, 1992, 1993, 1994, 1995],
 			labels: {
 				show: false,
 			},
@@ -27,7 +27,7 @@ const DashboardChart1 = () => {
 			type: "gradient",
 			gradient: {
 				shade: "dark",
-				gradientToColors: ["#FFA500", "#008000"],
+				gradientToColors: [ "#008000"],
 				shadeIntensity: 1,
 				type: "horizontal",
 				opacityFrom: 1,
@@ -66,7 +66,7 @@ const DashboardChart1 = () => {
 			padding: {
 				top: 0,
 				right: 0,
-				bottom: 0,
+				bottom: -20,
 				left: -10,
 			},
 		},
@@ -75,18 +75,19 @@ const DashboardChart1 = () => {
 	const series = [
 		{
 			name: "series-1",
-			data: [20, 30, 40, 30, 52, 48, 60, 51, 105],
+			data: [25, 30, 32, 30, 42,],
 		},
 	];
 
 	return (
-		<div className="w-full box-shadow rounded-md relative">
+		<div
+			className="w-full box-shadow rounded-md relative bg-[#cbeaffbb]"
+			data-aos="zoom-in"
+			data-aos-duration="1000"
+		>
 			<ReactApexChart options={options} series={series} type="area" />
-			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-orange-900">
-				<span>Temperature </span>
-				<span>
-					30<sup className="text-orange-800 text-xs">0</sup>
-				</span>
+			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-slate-500 drop-shadow-lg">
+				<span>Energy Produce</span>
 			</p>
 		</div>
 	);

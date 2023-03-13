@@ -11,12 +11,17 @@ const Map = ({setDistrict }) => {
 		setCoords([...coords, xCoord, yCoord]);
 		console.log(coords);
 	};
+	const updateDistrict = (event, data) => {
+		event.stopPropagation(); // prevent event bubbling
+		setDistrict(data);
+	}
 	return (
 		<div
 			className="w-2/3 h-[500px] flex justify-center items-center rounded-md box-shadow bg-[#f8f2ed59] relative"
 			data-aos="zoom-in"
 			data-aos-anchor="#example-anchor"
 			data-aos-duration="1000"
+			onClick={(e) => updateDistrict(e, "Telangana State")}
 		>
 			<img
 				src={mapImg}
@@ -32,13 +37,10 @@ const Map = ({setDistrict }) => {
 						shape="poly"
 						coords={item.coord}
 						alt="map-demo"
-						onClick={() => setDistrict(item.district)}
+						onClick={(e) => updateDistrict(e, item.district+' District')}
 					/>
 				))}
 			</map>
-			<p className="absolute top-1 left-2 text-sm font-semibold text-gray-500">
-				Map of Telangana
-			</p>
 		</div>
 	);
 };

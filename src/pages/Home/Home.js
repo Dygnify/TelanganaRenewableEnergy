@@ -4,9 +4,9 @@ import Header from '../../components/Header';
 
 const Home = () => {
     return (
-		<div className="bg-slate-100  min-h-screen">
+		<div className="  min-h-screen">
 			<Header />
-			<div className="px-8 py-2 text-slate-800">
+			<div className="px-8 py-[2rem] text-slate-800">
 				<Outlet />
 			</div>
 		</div>

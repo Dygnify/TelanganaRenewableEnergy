@@ -56,16 +56,16 @@ const LineChart = () => {
 			},
 			series: [
 				{
-					name: "Music",
-					data: [1, 15, 26, 20, 33, 27],
+					name: "Low",
+					data: [1, 15, 26, 20, 33, 22],
 				},
 				{
-					name: "Photos",
+					name: "Medium",
 					data: [3, 33, 21, 42, 19, 32],
 				},
 				{
-					name: "Files",
-					data: [0, 39, 52, 11, 29, 43],
+					name: "High",
+					data: [0, 39, 52, 11, 29, 63],
 				},
 			],
 			title: {

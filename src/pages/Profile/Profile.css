@@ -1,0 +1,7 @@
+.profile section {
+	overflow: hidden;
+	height: 85vh;
+}
+.profile section:hover {
+	overflow: auto;
+}
