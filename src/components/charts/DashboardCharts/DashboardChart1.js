@@ -13,7 +13,7 @@ const DashboardChart1 = () => {
 			},
 		},
 		xaxis: {
-			categories: [1991, 1992, 1993, 1994, 1995],
+			categories: ['November', 'December', 'January', 'February', 'March'],
 			labels: {
 				show: false,
 			},
@@ -74,9 +74,10 @@ const DashboardChart1 = () => {
 
 	const series = [
 		{
-			name: "series-1",
-			data: [25, 30, 32, 30, 42,],
+			name: "Energy Produced",
+			data: [85, 80, 85, 90, 95],
 		},
+		
 	];
 
 	return (
@@ -87,7 +88,7 @@ const DashboardChart1 = () => {
 		>
 			<ReactApexChart options={options} series={series} type="area" />
 			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-slate-500 drop-shadow-lg">
-				<span>Energy Produce</span>
+				<span>Energy Produced</span>
 			</p>
 		</div>
 	);

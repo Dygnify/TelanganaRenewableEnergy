@@ -32,7 +32,7 @@ const SelectedDistrict = ({ district }) => {
 				</div>
 				<div className=" w-5/6 p-2 rounded-md bg-gradient-to-r from-[#cbeaffbb] to-[#e0f2fe11] border border-slate-100">
 					<p className="text-sm text-center font-semibold text-slate-500">
-						CO<sup>2</sup> Emission Reduced
+						CO<sub>2</sub> Emission Reduced
 					</p>
 					<div className="flex items-center mt-2 gap-6 p-2  rounded-[100px] mx-4 bg-gradient-to-r from-[#cbeaffbb] to-[#e0f2fe11] border border-slate-100">
 						<div className="w-16 h-16 border border-sky-300 rounded-full p-[2px]">

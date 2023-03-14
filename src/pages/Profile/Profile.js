@@ -20,7 +20,7 @@ const Profile = () => {
 						/>
 					</div>
 					<p className="text-xs font-semibold text-slate-500 drop-shadow-lg">
-						Mohammad Rakib
+					C. Narayana Reddy
 					</p>
 				</div>
 				<div className="mt-8">
@@ -29,20 +29,13 @@ const Profile = () => {
 					</p>
 					<div className="text-[12px]  bg-gradient-to-b from-[#bde0f8cc] to-[#e6f3faf6]  px-2 py-4 rounded-sm">
 						<p className="flex justify-between">
-							<span>District:</span> <span>Nalgonda</span>
+							<span>District:</span> <span>Mulugu</span>
 						</p>
 						<p className="flex justify-between">
-							<span>Temp:</span>{" "}
-							<span>
-								30<sup>0</sup>
-								degree
-							</span>
+							<span>Email:</span> <span>cnreddy@gmail.com</span>
 						</p>
 						<p className="flex justify-between">
-							<span>Email:</span> <span>abc@gmail.com</span>
-						</p>
-						<p className="flex justify-between">
-							<span>Phone:</span> <span>+880 1771909209</span>
+							<span>Phone:</span> <span>+91 771909209</span>
 						</p>
 					</div>
 				</div>
@@ -76,7 +69,7 @@ const Profile = () => {
 			</section>
 			<section className="profile-right-section w-2/12 min-h-[500px] rounded-md shadow-sm bg-[#aed9f575] border border-sky-200 p-2">
 				<h2 className=" text-sm border-b-2 border-sky-200 font-semibold text-slate-500 drop-shadow-lg">
-					Latest News
+					Eligible Subsidies
 				</h2>
 				<div className="">
 					<div className="bg-gradient-to-b from-[#bde0f8da] to-[#eaf2f7f6] border border-[#cbeaff59]    p-2 pt-1 cursor-pointer mt-4">
