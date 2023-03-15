@@ -6,7 +6,7 @@ const Home = () => {
     return (
 		<div className="  min-h-screen">
 			<Header />
-			<div className="px-8 py-[2rem] text-slate-800">
+			<div className="px-8 mt-4 text-slate-800">
 				<Outlet />
 			</div>
 		</div>

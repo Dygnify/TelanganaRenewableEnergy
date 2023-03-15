@@ -17,7 +17,7 @@ const Map = ({setDistrict }) => {
 	}
 	return (
 		<div
-			className="w-2/3 h-[500px] flex justify-center items-center rounded-md box-shadow bg-[#f8f2ed59] relative"
+			className="w-2/3 h-[500px] flex justify-center items-center rounded-md box-shadow4 bg-[#d8d7d610] relative "
 			data-aos="zoom-in"
 			data-aos-anchor="#example-anchor"
 			data-aos-duration="1000"
@@ -37,7 +37,9 @@ const Map = ({setDistrict }) => {
 						shape="poly"
 						coords={item.coord}
 						alt="map-demo"
-						onClick={(e) => updateDistrict(e, item.district+' District')}
+						onClick={(e) =>
+							updateDistrict(e, item.district + " District")
+						}
 					/>
 				))}
 			</map>

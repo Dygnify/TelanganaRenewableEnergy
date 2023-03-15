@@ -1,10 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Header.css";
+import headerLogo from '../images/logo.png';
 
 const Header = () => {
+	const navigate = useNavigate();
 	return (
-		<nav className="py-4 text-[#fff] bg-[#ff9100ef] header-nav">
+		<nav className="sticky top-0 z-50 flex justify-between items-center py-0 px-6 text-[#fff] bg-[#ffffffff] header-nav">
+			<div className="">
+				<img
+					className="md:w-40 h-11 w-28 md:h-16 cursor-pointer"
+					src={headerLogo}
+					alt="company logo"
+					onClick={() => navigate("/home")}
+				/>
+			</div>
 			<ul className="flex justify-center gap-1">
 				<NavLink
 					to="/home"

@@ -5,14 +5,14 @@ import profileImg from "../../images/profile-img.jpg";
 import galleryImg1 from "../../images/HEAT-WAVE.jpg";
 import galleryImg2 from "../../images/temp1.jpeg";
 import DashboardChart2 from "../../components/charts/DashboardCharts/DashboardChart2";
-import './Profile.css';
+import "./Profile.css";
 
 const Profile = () => {
 	return (
 		<div className="text-slate-500 gap-4 flex box-border profile">
-			<section className="profile-left-section w-2/12 min-h-[500px] rounded-md  bg-[#aed9f575] border border-sky-200">
+			<section className="profile-left-section w-2/12 min-h-[500px] rounded-md  bg-[#e9e5fd4d] border border-[#e9e5fd] box-shadow2">
 				<div className="flex flex-col items-center mt-2">
-					<div className="w-16 h-16 border border-sky-300 rounded-full p-[2px]">
+					<div className="w-16 h-16 border border-[#ccc2ffe5] rounded-full p-[2px]">
 						<img
 							src={profileImg}
 							className="w-full h-full rounded-full"
@@ -20,14 +20,14 @@ const Profile = () => {
 						/>
 					</div>
 					<p className="text-xs font-semibold text-slate-500 drop-shadow-lg">
-					C. Narayana Reddy
+						C. Narayana Reddy
 					</p>
 				</div>
 				<div className="mt-8">
 					<p className="text-center font-semibold text-slate-500 drop-shadow-lg">
 						Summary
 					</p>
-					<div className="text-[12px]  bg-gradient-to-b from-[#bde0f8cc] to-[#e6f3faf6]  px-2 py-4 rounded-sm">
+					<div className="text-[12px]  box-shadow2 px-2 py-4 rounded-sm">
 						<p className="flex justify-between">
 							<span>District:</span> <span>Mulugu</span>
 						</p>
@@ -40,7 +40,7 @@ const Profile = () => {
 					</div>
 				</div>
 				<div className="mt-8 p-2">
-					<p className="border-b-[1px] border-sky-200 font-semibold text-slate-500 drop-shadow-lg">
+					<p className="border-b-[1px] border-[#e9e5fdc7] font-semibold text-slate-500 drop-shadow-lg">
 						Dummy Info:
 					</p>
 					<p className="text-[12px] text-justify">
@@ -53,26 +53,26 @@ const Profile = () => {
 					</p>
 				</div>
 			</section>
-			<section className="profile-mid-section dashboard w-8/12 min-h-[500px] rounded-md bg-[#d2e8f750]  border border-sky-200 p-2">
-				<h2 className=" text-[1.4375rem] lg:text-[2rem] font-semibold text-slate-500  drop-shadow-lg">
+			<section className="profile-mid-section dashboard w-8/12 min-h-[500px] rounded-md  border border-[#e9e5fd]">
+				<h2 className=" text-[1.4375rem] lg:text-[2rem] font-semibold text-slate-500  drop-shadow-lg px-2">
 					Dashboard
 				</h2>
-				<div className="-mt-1 divider"></div>
-				<div className="mt-8 grid grid-cols-2 gap-4 ">
+				{/* <div className="-mt-1 divider"></div> */}
+				<div className="mt-8 grid grid-cols-2 gap-4 p-2">
 					<DashboardChart1 />
 					<DashboardChart2 />
 				</div>
-				<div className="mt-8 grid grid-cols-1 gap-8">
+				<div className="mt-8 grid grid-cols-1 gap-8 p-2">
 					<DashboardCard info={{ title: "Card 1" }} />
 					<DashboardCard info={{ title: "Card 2" }} />
 				</div>
 			</section>
-			<section className="profile-right-section w-2/12 min-h-[500px] rounded-md shadow-sm bg-[#aed9f575] border border-sky-200 p-2">
-				<h2 className=" text-sm border-b-2 border-sky-200 font-semibold text-slate-500 drop-shadow-lg">
+			<section className="profile-right-section w-2/12 min-h-[500px] rounded-md  bg-[#e9e5fd4d] border border-[#e9e5fd] p-2 box-shadow2">
+				<h2 className=" text-sm border-b-2 border-[#e9e5fdc7] font-semibold text-slate-500 drop-shadow-lg">
 					Eligible Subsidies
 				</h2>
 				<div className="">
-					<div className="bg-gradient-to-b from-[#bde0f8da] to-[#eaf2f7f6] border border-[#cbeaff59]    p-2 pt-1 cursor-pointer mt-4">
+					<div className=" border border-[#cbeaff59]    p-2 pt-1 cursor-pointer mt-4 box-shadow2">
 						<p className="text-[12px] mt-1 text-justify">
 							Temperatures expected to rise in Hyderabad this week
 						</p>
@@ -82,7 +82,7 @@ const Profile = () => {
 							className="w-full border border-sky-200"
 						/>
 					</div>
-					<div className="bg-gradient-to-b from-[#bde0f8da] to-[#eaf2f7f6] border border-[#cbeaff59]    p-2 pt-1 cursor-pointer mt-4">
+					<div className=" border border-[#cbeaff59]    p-2 pt-1 cursor-pointer mt-4 box-shadow2">
 						<p className="text-[12px] mt-1 text-justify">
 							Temperatures expected to rise in Hyderabad this week
 						</p>
