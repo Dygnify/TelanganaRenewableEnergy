@@ -43,7 +43,6 @@ const Form = ({ handleNext,number, setNumber }) => {
 				<Button
 					className="w-1/3 mx-auto mt-8"
 					disabled={(number.length < 10) || (number.length > 10)}
-					// disabled={!number}
 					onClick={() => handleNext()}
 				>
 					Send OTP

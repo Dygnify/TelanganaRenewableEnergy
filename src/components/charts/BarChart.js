@@ -50,6 +50,13 @@ const BarChart = () => {
 							{
 								ticks: {
 									beginAtZero: true,
+									callback: function (value) {
+										return "$" + value;
+									},
+									scaleLabel: {
+										display: true,
+										labelString: "Y Axis Label",
+									},
 								},
 							},
 						],
@@ -58,12 +65,17 @@ const BarChart = () => {
 						legend: {
 							display: false,
 						},
+						title: {
+							display: true,
+							text: "( Custom Chart Title )",
+							position:'left'
+						},
 					},
 				},
 			};
 			new Chart(chartContainer.current, chartConfig);
 		}
-	}, [chartContainer, data]);
+	}, [chartContainer]);
 
 	return <canvas ref={chartContainer} />;
 };

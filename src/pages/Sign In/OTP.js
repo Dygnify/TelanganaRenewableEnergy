@@ -12,7 +12,7 @@ const Form = ({ handlePrev, number }) => {
 		console.log(e.target.otp.value);
 	};
 	return (
-		<div>
+		<div data-aos="zoom-in" data-aos-duration="1000">
 			<h2 className=" text-[1.4375rem] lg:text-[1.8rem] font-semibold text-slate-500  drop-shadow-lg px-2 text-center">
 				Please Enter the OTP to Verify your Account
 			</h2>
@@ -48,16 +48,14 @@ const Form = ({ handlePrev, number }) => {
 					/>
 				</div>
 				<Button
-					className="w-1/3 mx-auto mt-8"
+					className="w-1/3 mx-auto mt-6"
 					disabled={otp.length < 6 || otp.length > 6}
-					onClick={() => navigate('/profile')}
+					onClick={() => navigate("/profile")}
 				>
 					Validate OTP
 				</Button>
 			</form>
-			<p
-				className="text-center text-xs mt-2 text-slate-500 p-1 rounded-full bg-[#b6b5b533] w-1/6 mx-auto border border-[#9c9c9c28]  cursor-pointer"
-			>
+			<p className="text-center text-xs mt-2 text-slate-500 p-1  rounded-full bg-[#b6b5b533] w-1/6 mx-auto border border-[#9c9c9c28]  cursor-pointer">
 				Resend OTP
 			</p>
 		</div>

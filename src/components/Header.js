@@ -10,8 +10,8 @@ const Header = () => {
 	const [user, setUser] = useState(false);
 	useEffect(()=>{
 		setIsSignInOpen(location.pathname.includes('signIn'))
-		setUser(location.pathname.includes('profile'))
-	},[location])
+		if(!user) setUser(location.pathname.includes('profile'))
+	},[location, user])
 	
 	console.log(
 		isSignInOpen, location.pathname,

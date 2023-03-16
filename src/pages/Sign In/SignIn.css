@@ -1,12 +1,15 @@
-.sotp-blur {
-	position: absolute;
-	top: 0;
+.my-modal {
+	position: fixed;
+	top: 0%;
 	left: 0%;
 	right: 0%;
 	bottom: 0%;
-	background: #000000b8;
-	z-index: 20;
+	background: #000000c0;
+	z-index: 200;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.my-modal-body {
+	background-color: white;
 }
