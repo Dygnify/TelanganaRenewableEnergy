@@ -29,7 +29,6 @@ code {
 }
 
 .box-shadow {
-	/* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
   /* box-shadow:  -1px -1px 1px rgba(185, 185, 185, 0.1); */
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
@@ -41,6 +40,9 @@ code {
 }
 .box-shadow4{
   box-shadow: rgba(200, 142, 253, 0.25) 0px 30px 60px -12px inset, rgba(200, 142, 253, 0.25) 0px 18px 36px -18px inset;
+}
+.box-shadow5{
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 .my-text-shadow {
 	text-shadow: 3px 3px 5px #9e9e9eaf;
@@ -70,3 +72,13 @@ code {
 	);
   /* box-shadow: inset -1px -1px 1px rgba(185, 185, 185, 0.1); */
 }
+
+  @layer base {
+        input[type='number']::-webkit-outer-spin-button,
+        input[type='number']::-webkit-inner-spin-button,
+        input[type='number'] {
+          -webkit-appearance: none;
+          margin: 0;
+          -moz-appearance: textfield !important;
+        }
+     }

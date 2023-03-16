@@ -1,12 +1,29 @@
-import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
-import headerLogo from '../images/logo.png';
+import headerLogo from "../images/logo.png";
 
 const Header = () => {
 	const navigate = useNavigate();
+	const location = useLocation();
+	const [isSignInOpen, setIsSignInOpen] = useState(false);
+	const [user, setUser] = useState(false);
+	useEffect(()=>{
+		setIsSignInOpen(location.pathname.includes('signIn'))
+		setUser(location.pathname.includes('profile'))
+	},[location])
+	
+	console.log(
+		isSignInOpen, location.pathname,
+		location.pathname.includes("signIn")
+	);
+	
 	return (
-		<nav className="sticky top-0 z-50 flex justify-between items-center py-0 px-6 text-[#fff] bg-[#ffffffff] header-nav">
+		<nav
+			className={`sticky top-0 z-50 flex justify-between items-center py-0 px-6 text-[#fff] bg-[#ffffffff] header-nav ${
+				isSignInOpen ? "blur-sm" : ""
+			}`}
+		>
 			<div className="">
 				<img
 					className="md:w-40 h-11 w-28 md:h-16 cursor-pointer"
@@ -37,12 +54,21 @@ const Header = () => {
 					<li>Analytic</li>
 				</NavLink>
 
-				<NavLink
-					to="/profile"
-					className={({ isActive }) => (isActive ? "active" : "")}
-				>
-					<li>Profile</li>
-				</NavLink>
+				{!user ? (
+					<NavLink
+						to="/signIn"
+						className={({ isActive }) => (isActive ? "active" : "")}
+					>
+						<li>Sign In</li>
+					</NavLink>
+				) : (
+					<NavLink
+						to="/profile"
+						className={({ isActive }) => (isActive ? "active" : "")}
+					>
+						<li>Profile</li>
+					</NavLink>
+				)}
 			</ul>
 		</nav>
 	);

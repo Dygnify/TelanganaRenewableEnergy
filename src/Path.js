@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Profile from "./pages/Profile/Profile";
 import Search from "./pages/Search/Search";
+import SignIn from "./pages/Sign In/SignIn";
 
 const Paths = () => {
 	return (
@@ -16,6 +17,7 @@ const Paths = () => {
 					<Route path="search" element={<Search />} />
 					<Route path="analytic" element={<Analytic />} />
 					<Route path="profile" element={<Profile />} />
+					<Route path="signIn" element={<SignIn />} />
 				</Route>
 			</Routes>
 		</HashRouter>

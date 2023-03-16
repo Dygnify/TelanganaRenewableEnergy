@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
 
 const data = {
-	title: "Solar Bar Chart",
 	labels: ["January", "February", "March", "April", "May", "June", "July"],
 	values: [300, 200, 300, 400, 500, 450, 230],
 	colors: [
@@ -37,7 +36,7 @@ const BarChart = () => {
 					labels: data.labels,
 					datasets: [
 						{
-							label: data.title,
+							label: "",
 							data: data.values,
 							backgroundColor: data.colors,
 							borderColor: data.borderColor,
@@ -54,6 +53,11 @@ const BarChart = () => {
 								},
 							},
 						],
+					},
+					plugins: {
+						legend: {
+							display: false,
+						},
 					},
 				},
 			};

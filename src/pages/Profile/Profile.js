@@ -1,10 +1,11 @@
 import React from "react";
-import DashboardCard from "../../components/cards/DashboardCard";
+import DashboardCard1 from "../../components/cards/DashboardCard1";
+import DashboardCard2 from "../../components/cards/DashboardCard2";
 import DashboardChart1 from "../../components/charts/DashboardCharts/DashboardChart1";
+import DashboardChart2 from "../../components/charts/DashboardCharts/DashboardChart2";
 import profileImg from "../../images/profile-img.jpg";
 import galleryImg1 from "../../images/HEAT-WAVE.jpg";
 import galleryImg2 from "../../images/temp1.jpeg";
-import DashboardChart2 from "../../components/charts/DashboardCharts/DashboardChart2";
 import "./Profile.css";
 
 const Profile = () => {
@@ -57,14 +58,13 @@ const Profile = () => {
 				<h2 className=" text-[1.4375rem] lg:text-[2rem] font-semibold text-slate-500  drop-shadow-lg px-2">
 					Dashboard
 				</h2>
-				{/* <div className="-mt-1 divider"></div> */}
 				<div className="mt-8 grid grid-cols-2 gap-4 p-2">
 					<DashboardChart1 />
 					<DashboardChart2 />
 				</div>
 				<div className="mt-8 grid grid-cols-1 gap-8 p-2">
-					<DashboardCard info={{ title: "Card 1" }} />
-					<DashboardCard info={{ title: "Card 2" }} />
+					<DashboardCard1  />
+					<DashboardCard2  />
 				</div>
 			</section>
 			<section className="profile-right-section w-2/12 min-h-[500px] rounded-md  bg-[#e9e5fd4d] border border-[#e9e5fd] p-2 box-shadow2">

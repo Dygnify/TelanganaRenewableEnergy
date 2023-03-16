@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Map from "../../components/Map";
 import SelectedDistrict from "../../components/SelectedDistrict";
+import { getTotalEnergy } from "../../utilities/getTotalEnergy";
 
 const LandingPage = () => {
 	const [district, setDistrict] = useState("Telangana State");
+	const [energy, setEnergy] = useState(getTotalEnergy());
 	return (
 		<div className="">
 			<h2
@@ -15,8 +17,8 @@ const LandingPage = () => {
 				Telagana Solar Energy profile
 			</h2>
 			<div className="flex gap-8">
-				<Map setDistrict={setDistrict} />
-				<SelectedDistrict district={district} />
+				<Map setDistrict={setDistrict} setEnergy={setEnergy} />
+				<SelectedDistrict district={district} energy={energy} />
 			</div>
 		</div>
 	);
