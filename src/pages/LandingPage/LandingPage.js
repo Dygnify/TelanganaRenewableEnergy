@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Map from "../../components/Map";
 import SelectedDistrict from "../../components/SelectedDistrict";
-import { getTotalEnergy } from "../../utilities/getTotalEnergy";
+import energyMap from "../../utilities/energyInfo";
 
 const LandingPage = () => {
 	const [district, setDistrict] = useState("Telangana State");
-	const [energy, setEnergy] = useState(getTotalEnergy());
+	const [energy, setEnergy] = useState(energyMap.get("Telangana State"));
 	return (
 		<div className="">
 			<h2

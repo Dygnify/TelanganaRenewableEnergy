@@ -1,0 +1,35 @@
+/* svg styles started  */
+.analytic-map .fil0{
+    fill:#ffffff;
+	cursor: pointer;
+}
+
+/* area stroke  */
+.analytic-map .str0 {
+	stroke: rgb(20, 20, 20);
+	stroke-width: 6;
+	stroke-opacity: 1;
+}
+.analytic-map .str0:hover {
+	stroke: #067264;
+	stroke-width: 15;
+	stroke-opacity: 1;
+}
+
+/*text color */
+.analytic-map .fil3 {
+	fill: #131212a2;
+	fill-rule: nonzero;
+}
+
+/*text background*/
+.fil2 {
+	fill: #27272700;
+	fill-opacity: 0.701961;
+}
+/*testing purpose*/
+.rakib {
+	fill: #f00909;
+	fill-opacity: 0.701961;
+}
+/* svg styles ended  */

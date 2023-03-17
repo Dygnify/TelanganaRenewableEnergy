@@ -14,7 +14,7 @@ const SelectedDistrict = ({ district, energy }) => {
 				{district}
 			</h3>
 			<section className="flex flex-col items-center justify-center gap-y-6">
-				<div className=" w-5/6 p-2 rounded-md gradient-right border border-slate-100">
+				<div className=" w-5/6 p-2 rounded-md gradient-right  box-shadow5">
 					<p className="text-sm text-center font-semibold text-slate-500">
 						Energy Produced
 					</p>
@@ -31,7 +31,7 @@ const SelectedDistrict = ({ district, energy }) => {
 						</p>
 					</div>
 				</div>
-				<div className=" w-5/6 p-2 rounded-md gradient-right border border-slate-100">
+				<div className="w-5/6 p-2 rounded-md gradient-right  box-shadow5">
 					<p className="text-sm text-center font-semibold text-slate-500">
 						CO<sub>2</sub> Emission Reduced
 					</p>
@@ -44,7 +44,7 @@ const SelectedDistrict = ({ district, energy }) => {
 							/>
 						</div>
 						<p className="text-2xl text-[#ff9100ef] drop-shadow-lg">
-							{energy*1500} Kw
+							{energy * 1500} Kw
 						</p>
 					</div>
 				</div>

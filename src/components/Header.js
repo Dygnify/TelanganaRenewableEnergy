@@ -8,22 +8,19 @@ const Header = () => {
 	const location = useLocation();
 	const [isSignInOpen, setIsSignInOpen] = useState(false);
 	const [user, setUser] = useState(false);
-	useEffect(()=>{
-		setIsSignInOpen(location.pathname.includes('signIn'))
-		if(!user) setUser(location.pathname.includes('profile'))
-	},[location, user])
-	
+	useEffect(() => {
+		setIsSignInOpen(location.pathname.includes("signIn"));
+		if (!user) setUser(location.pathname.includes("profile"));
+	}, [location, user]);
+
 	console.log(
-		isSignInOpen, location.pathname,
+		isSignInOpen,
+		location.pathname,
 		location.pathname.includes("signIn")
 	);
-	
+
 	return (
-		<nav
-			className={`sticky top-0 z-50 flex justify-between items-center py-0 px-6 text-[#fff] bg-[#ffffffff] header-nav ${
-				isSignInOpen ? "blur-sm" : ""
-			}`}
-		>
+		<nav className="box-shadow5 sticky top-0 z-50 flex justify-between items-center py-0 px-6 text-[#fff] bg-[#ffffffff] header-nav">
 			<div className="">
 				<img
 					className="md:w-40 h-11 w-28 md:h-16 cursor-pointer"
