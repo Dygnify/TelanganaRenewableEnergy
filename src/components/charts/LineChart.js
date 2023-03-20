@@ -69,10 +69,10 @@ const LineChart = () => {
 				},
 			],
 			title: {
-				text: "Energy Produced",
-				align: "left",
-				offsetY: 25,
-				offsetX: 20,
+				text: "Daily Categorywise Energy Produced",
+				align: "center",
+				offsetY: 0,
+				offsetX: 0,
 			},
 			subtitle: {
 				text: "(in MW)",

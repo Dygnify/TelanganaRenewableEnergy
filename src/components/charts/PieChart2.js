@@ -23,6 +23,12 @@ const PieChart2 = () => {
 					"#AB9F30",],
 			opacity: 1,
 		},
+		title: {
+			text: "Categorywise Energy Produced",
+			align: "center",
+			offsetY: 0,
+			offsetX: 0,
+		},
 		labels: [
 			"Solar Furnace",
 			"Household Solar rooftop",
