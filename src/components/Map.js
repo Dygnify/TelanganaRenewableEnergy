@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import energyMap from "../utilities/energyInfo";
 import MapSvg from "../utilities/svg/MapSvg";
 
-const Map = ({ setDistrict, setEnergy, width}) => {
+const Map = ({ setDistrict, setEnergy, width, title}) => {
 	const [selectedDistrict, setSelectedDistrict] = useState("");
 	const updateInfo = (event, district) => {
 		event.stopPropagation(); // prevent event bubbling
@@ -22,6 +22,7 @@ const Map = ({ setDistrict, setEnergy, width}) => {
 				selectedDistrict={selectedDistrict}
 				setSelectedDistrict={setSelectedDistrict}
 				updateInfo={updateInfo}
+				title={title}
 			/>
 		</div>
 	);

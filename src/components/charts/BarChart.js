@@ -2,7 +2,15 @@ import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
 
 const data = {
-	labels: ["September","October", "November" ,"December", "January", "February", "March"],
+	labels: [
+		"September",
+		"October",
+		"November",
+		"December",
+		"January",
+		"February",
+		"March",
+	],
 	values: [300, 200, 300, 400, 500, 450, 230],
 	colors: [
 		"rgba(255, 99, 132, 0.4)",
@@ -63,12 +71,26 @@ const BarChart = () => {
 					},
 					plugins: {
 						legend: {
-							display: false,
+							display: true,
+							position: "top",
+							labels: {
+								boxWidth: 0,
+								boxHeight: 0,
+							},
+							title: {
+								display: true,
+								text: "Monthly Energy Production",
+								color: "#535A6C",
+								font: {
+									size: 18,
+									weight:'bold',
+								},
+							},
 						},
 						title: {
 							display: true,
 							text: "( Energy Produced in MW )",
-							position:'left'
+							position: "left",
 						},
 					},
 				},

@@ -30,7 +30,7 @@ const Analytic = () => {
 					data-aos="fade-up"
 					data-aos-duration="1000"
 				>
-					<Map setDistrict={setDistrict} setEnergy={setEnergy} width='w-[85%]' />
+					<Map setDistrict={setDistrict} setEnergy={setEnergy} width='w-[85%]' title={true}/>
 				</section>
 				<section
 					className="box-shadow5 min-h-[300px] flex justify-center items-center gradient-bottom rounded-md p-2 border border-[#ccc2ff77]"
