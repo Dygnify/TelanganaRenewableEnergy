@@ -11,29 +11,34 @@ const demoInfo = [
 
 const DashboardCard1 = () => {
 	return (
-		<div className="box-shadow4 gradient-right border border-[#ccc2ff8f] w-4/5 mx-auto flex justify-center items-center rounded-md  gap-4 p-4">
-			<div className="w-[35%] h-full p-[2px] border border-[#ccc2ffe5]  rounded-lg  hover:scale-[1.15] transition ease-in-out duration-700 box-shadow2 bg-[#FDFCFF]">
-				<DashboardCardChart />
-			</div>
-			<div className="w-[60%] h-full flex flex-col justify-between gap-y-2">
-				{demoInfo.map((item, i) => (
-					<div
-						key={i}
-						className="flex justify-between p-2 items-center border border-[#ccc2ff8f] hover:border-[#ccc2ff] rounded-[5px]  hover:scale-105 transition ease-in-out duration-300 box-shadow5 gradient-right"
-					>
-						<div className="flex gap-2 ">
-							<div className="w-[20px] flex items-center mix-blend-multiply">
-								<img
-									src={iconImg}
-									alt=""
-									className="w-full rounded-full"
-								/>
+		<div className="">
+			<h2 className="text-center font-semibold text-xl text-slate-500 drop-shadow-lg mb-[5px]">
+				Green Score
+			</h2>
+			<div className="box-shadow4 gradient-right border border-[#ccc2ff8f] w-4/5 mx-auto flex justify-center items-center rounded-md  gap-4 p-4">
+				<div className="w-[35%] h-full p-[2px] border border-[#ccc2ffe5]  rounded-lg  hover:scale-[1.15] transition ease-in-out duration-700 box-shadow2 bg-[#FDFCFF]">
+					<DashboardCardChart />
+				</div>
+				<div className="w-[60%] h-full flex flex-col justify-between gap-y-2">
+					{demoInfo.map((item, i) => (
+						<div
+							key={i}
+							className="flex justify-between p-2 items-center border border-[#ccc2ff8f] hover:border-[#ccc2ff] rounded-[5px]  hover:scale-105 transition ease-in-out duration-300 box-shadow5 gradient-right"
+						>
+							<div className="flex gap-2 ">
+								<div className="w-[20px] flex items-center mix-blend-multiply">
+									<img
+										src={iconImg}
+										alt=""
+										className="w-full rounded-full"
+									/>
+								</div>
+								<span>{item.text}</span>
 							</div>
-							<span>{item.text}</span>
+							<span className="">{item.energy}</span>
 						</div>
-						<span className="">{item.energy}</span>
-					</div>
-				))}
+					))}
+				</div>
 			</div>
 		</div>
 	);

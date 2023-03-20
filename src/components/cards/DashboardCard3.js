@@ -12,11 +12,11 @@ const demoInfo = [
 	{ text: "Sustainability Score", energy: "126 GS", img: iconImg4 },
 ];
 
-const DashboardCard2 = () => {
+const DashboardCard3 = () => {
 	return (
 		<div>
 			<h2 className="text-center font-semibold text-xl text-slate-500 drop-shadow-lg mb-[5px]">
-				Solar Pump
+				Solar Roof Top
 			</h2>
 			<div className="box-shadow4 gradient-right border border-[#ccc2ff8f] w-4/5 mx-auto flex justify-center items-center rounded-md gap-4 p-4">
 				<div className="w-[35%] h-full border border-[#ccc2ffe5] p-[2px] rounded-lg hover:scale-[1.15] transition ease-in-out duration-700 box-shadow2">
@@ -51,4 +51,4 @@ const DashboardCard2 = () => {
 	);
 };
 
-export default DashboardCard2;
+export default DashboardCard3;

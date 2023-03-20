@@ -5,7 +5,7 @@ import co2_img from "../images/CO2.png";
 const SelectedDistrict = ({ district, energy }) => {
 	return (
 		<div
-			className=" w-1/3 h-[500px] rounded-md  text-slate-800 bg-[#d8d7d610]  box-shadow3 flex flex-col justify-between"
+			className=" w-1/3 h-full pb-6 rounded-md  text-slate-800 bg-[#d8d7d610]  box-shadow3 "
 			data-aos="zoom-in"
 			data-aos-anchor="#example-anchor"
 			data-aos-duration="1000"
@@ -13,7 +13,7 @@ const SelectedDistrict = ({ district, energy }) => {
 			<h3 className="gradient-bottom box-shadow2 text-[20px] rounded-md  py-2 text-center  text-[#64748B]">
 				{district}
 			</h3>
-			<section className="flex flex-col items-center justify-center gap-y-6">
+			<section className="flex flex-col items-center  gap-y-6 mt-6">
 				<div className=" w-5/6 p-2 rounded-md gradient-right  box-shadow5">
 					<p className="text-sm text-center font-semibold text-slate-500">
 						Energy Produced
@@ -49,9 +49,6 @@ const SelectedDistrict = ({ district, energy }) => {
 					</div>
 				</div>
 			</section>
-			<p>
-				<span></span>
-			</p>
 		</div>
 	);
 };

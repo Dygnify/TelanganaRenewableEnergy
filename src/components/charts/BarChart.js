@@ -82,7 +82,7 @@ const BarChart = () => {
 								text: "Monthly Energy Production",
 								color: "#535A6C",
 								font: {
-									size: 18,
+									size: 16,
 									weight:'bold',
 								},
 							},
@@ -99,7 +99,11 @@ const BarChart = () => {
 		}
 	}, [chartContainer]);
 
-	return <canvas ref={chartContainer} />;
+	return (
+		<div className="mt-8 h-full w-full">
+			<canvas ref={chartContainer} />
+		</div>
+	);
 };
 
 export default BarChart;

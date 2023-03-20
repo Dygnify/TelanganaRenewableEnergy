@@ -8,19 +8,23 @@ const PieChart2 = () => {
 			type: "polarArea",
 		},
 		series: [420, 470, 520, 580, 650],
-		colors: ["#FF6384",
-					"#36A2EB",
-					"#FFCE56",
-					"#4BC0C0",
-					"#FF9F40",
-					"#AB9F30",],
+		colors: [
+			"#FF6384",
+			"#36A2EB",
+			"#FFCE56",
+			"#4BC0C0",
+			"#FF9F40",
+			"#AB9F30",
+		],
 		fill: {
-			colors: ["#FF6384",
-					"#36A2EB",
-					"#FFCE56",
-					"#4BC0C0",
-					"#FF9F40",
-					"#AB9F30",],
+			colors: [
+				"#FF6384",
+				"#36A2EB",
+				"#FFCE56",
+				"#4BC0C0",
+				"#FF9F40",
+				"#AB9F30",
+			],
 			opacity: 1,
 		},
 		title: {
@@ -28,13 +32,18 @@ const PieChart2 = () => {
 			align: "center",
 			offsetY: 0,
 			offsetX: 0,
+			style: {
+				fontSize: "16px",
+				fontWeight: "bold",
+				color: "#535A6C",
+			},
 		},
 		labels: [
 			"Solar Furnace",
 			"Household Solar rooftop",
 			"Solar Pump",
 			"Solar Street Lights",
-			"Industrial Solar Rooftop"
+			"Industrial Solar Rooftop",
 		],
 		stroke: {
 			width: 0.2,
@@ -59,7 +68,7 @@ const PieChart2 = () => {
 	};
 
 	return (
-		<div >
+		<div className="mt-2" >
 			<Chart
 				options={options}
 				series={options.series}

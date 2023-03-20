@@ -84,8 +84,8 @@ const DashboardChart2 = () => {
 	return (
 		<div
 			className="w-full shadow-md rounded-md relative bg-[#f3c0991e]"
-			// data-aos="zoom-in"
-			// data-aos-duration="1000"
+			data-aos="zoom-in"
+			data-aos-duration="1000"
 		>
 			<ReactApexChart options={options} series={series} type="area" />
 			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-font-semibold text-slate-500 drop-shadow-lg">

@@ -253,7 +253,6 @@ const DashboardCardChart = ({ creditLoaderDisplayed=true, chainScore=689 }) => {
 				series={state?.otherChart?.series}
 				type="radialBar"
 				width="280"
-                
 			/>
 		</div>
 	);

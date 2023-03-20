@@ -7,6 +7,7 @@ import profileImg from "../../images/profile-img.jpg";
 import galleryImg1 from "../../images/pm-kusum-scheme.jpg";
 import galleryImg2 from "../../images/TSREDCO-Logo.svg";
 import "./Profile.css";
+import DashboardCard3 from "../../components/cards/DashboardCard3";
 
 const Profile = () => {
 	return (
@@ -65,6 +66,7 @@ const Profile = () => {
 				<div className="mt-8 grid grid-cols-1 gap-8 p-2">
 					<DashboardCard1  />
 					<DashboardCard2  />
+					<DashboardCard3  />
 				</div>
 			</section>
 			<section className="profile-right-section w-2/12 min-h-[500px] rounded-md  bg-[#e9e5fd4d] border border-[#e9e5fd] p-2 box-shadow2">

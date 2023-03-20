@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import ApexCharts from "apexcharts";
-import './LineChart.css';
 
 const LineChart = () => {
 	const chartRef = useRef(null);
@@ -37,7 +36,7 @@ const LineChart = () => {
 		var optionsLine = {
 			chart: {
 				height: 350,
-                width:"200%",
+				width: "200%",
 				type: "line",
 				zoom: {
 					enabled: false,
@@ -88,6 +87,7 @@ const LineChart = () => {
 			},
 			grid: {
 				show: true,
+				borderColor: "#D6D4E5",
 				padding: {
 					bottom: 0,
 				},
