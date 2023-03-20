@@ -1,12 +1,12 @@
 import React from "react";
-import demoImg from "../../images/demo-img.jpg";
+import demoImg from "../../images/solar-pump.png";
 import iconImg from "../../images/renewable-energy.jpg";
 
 const demoInfo = [
-	{ text: "demo text demo text1", energy: "200Kw" },
-	{ text: "demo text demo text2", energy: "300Kw" },
-	{ text: "demo text demo text3", energy: "500Kw" },
-	{ text: "demo text demo text4", energy: "700Kw" },
+	{ text: "Energy Produced", energy: "354 KW" },
+	{ text: "Energy Consumed", energy: "296 KW" },
+	{ text: "Carbon Emission Reduced", energy: "444 Mt" },
+	{ text: "Sustainability Score", energy: "126 GS" },
 ];
 
 const DashboardCard2 = () => {

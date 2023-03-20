@@ -4,8 +4,8 @@ import DashboardCard2 from "../../components/cards/DashboardCard2";
 import DashboardChart1 from "../../components/charts/DashboardCharts/DashboardChart1";
 import DashboardChart2 from "../../components/charts/DashboardCharts/DashboardChart2";
 import profileImg from "../../images/profile-img.jpg";
-import galleryImg1 from "../../images/HEAT-WAVE.jpg";
-import galleryImg2 from "../../images/temp1.jpeg";
+import galleryImg1 from "../../images/pm-kusum-scheme.jpg";
+import galleryImg2 from "../../images/TSREDCO-Logo.svg";
 import "./Profile.css";
 
 const Profile = () => {
@@ -74,7 +74,7 @@ const Profile = () => {
 				<div className="">
 					<div className=" border border-[#cbeaff59]    p-2 pt-1 cursor-pointer mt-4 box-shadow2">
 						<p className="text-[12px] mt-1 text-justify">
-							Temperatures expected to rise in Hyderabad this week
+						Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan (PM-KUSUM)
 						</p>
 						<img
 							src={galleryImg1}
@@ -84,7 +84,7 @@ const Profile = () => {
 					</div>
 					<div className=" border border-[#cbeaff59]    p-2 pt-1 cursor-pointer mt-4 box-shadow2">
 						<p className="text-[12px] mt-1 text-justify">
-							Temperatures expected to rise in Hyderabad this week
+						తెలంగాణ రాష్ట్ర పునరుద్ధరణీయ ఇంధన వనరుల అభివృద్ధి సంస్థ లిమిటెడ్ (TSREDCO) -Implementation of Solar Rooftop plants subsidy payments under GCRT Phase II
 						</p>
 						<img
 							src={galleryImg2}

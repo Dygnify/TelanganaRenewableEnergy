@@ -1,13 +1,12 @@
 import React from "react";
-import demoImg from "../../images/demo-img.jpg";
 import iconImg from "../../images/renewable-energy.jpg";
 import DashboardCardChart from "../charts/DashboardCharts/DashboardCardChart";
 
 const demoInfo = [
-	{ text: "demo text demo text1", energy: "200Kw" },
-	{ text: "demo text demo text2", energy: "300Kw" },
-	{ text: "demo text demo text3", energy: "500Kw" },
-	{ text: "demo text demo text4", energy: "700Kw" },
+	{ text: "Number of solar utilities used", energy: "" },
+	{ text: "Total Solar Energy Produced by equipments", energy: "" },
+	{ text: "Contribution of Unused Energy to Peers", energy: "" },
+	{ text: "Financial repayments of Solar Equipment Loans", energy: "" },
 ];
 
 const DashboardCard1 = () => {
