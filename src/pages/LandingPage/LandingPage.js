@@ -17,7 +17,13 @@ const LandingPage = () => {
 				Telagana Solar Energy profile
 			</h2>
 			<div className="flex gap-8">
-				<Map setDistrict={setDistrict} setEnergy={setEnergy} />
+				<div className=" box-shadow4 w-2/3  flex justify-center items-center rounded-md  bg-[#f8fafa] border border-[#ccc2ff77] relative home-page-sticky">
+					<Map
+						setDistrict={setDistrict}
+						setEnergy={setEnergy}
+						width="w-[80%]"
+					/>
+				</div>
 				<SelectedDistrict district={district} energy={energy} />
 			</div>
 		</div>

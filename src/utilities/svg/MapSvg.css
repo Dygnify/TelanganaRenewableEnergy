@@ -1,0 +1,90 @@
+/* svg styles started  */
+.analytic-map .fil0 {
+	cursor: pointer;
+}
+.analytic-map .fil0:hover {
+	fill: orange;
+}
+.analytic-map .low {
+	fill: #c1e000;
+}
+.analytic-map .low-mid {
+	fill: #a4d100;
+}
+.analytic-map .mid {
+	fill: #74ba00;
+}
+.analytic-map .mid-high {
+	fill: #58ac00;
+}
+.analytic-map .high {
+	fill: #3aaf03;
+}
+/* area stroke  */
+.analytic-map .str0 {
+	stroke: rgb(241, 240, 243);
+	stroke-width: 10;
+	stroke-opacity: 1;
+}
+.analytic-map .str0:hover {
+	stroke: #067264;
+	stroke-width: 15;
+	stroke-opacity: 1;
+}
+
+/*text color */
+.analytic-map .fil3 {
+	fill: #09346d;
+	fill-rule: nonzero;
+}
+
+/*text background*/
+.analytic-map .fil2 {
+	fill: transparent;
+	fill-opacity: 0.701961;
+}
+/*testing purpose*/
+.analytic-map .rakib {
+	fill: #f00909;
+	fill-opacity: 0.701961;
+}
+/* svg styles ended  */
+
+.my-tooltip {
+	min-width: 220px;
+	height: 100px;
+	padding: 0.5rem 0.5rem 1rem;
+	border-radius: 5px;
+	background-color: #f2edfa;
+	color: rgb(11, 80, 112);
+	border: 1px solid rgba(4, 65, 70, 0.11);
+	display: flex;
+	justify-content: center;
+	clip-path: polygon(
+		0% 0%,
+		100% 0%,
+		100% 75%,
+		60% 75%,
+		51% 87%,
+		41% 75%,
+		0% 75%
+	);
+}
+.my-tooltip p {
+	margin: 0;
+}
+.tooltip-info{
+  text-align: center;
+}
+.tooltip-info .district {
+	color: #8110fe;
+  font-size:1rem;
+  font-weight: 700;
+}
+.tooltip-info .energy {
+  font-size:14px;
+  font-weight: 600;
+}
+.tooltip-info .energy .value {
+  font-weight: normal;
+}
