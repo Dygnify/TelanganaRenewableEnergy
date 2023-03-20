@@ -15,7 +15,7 @@ const Map = ({ setDistrict, setEnergy, width, title }) => {
 	};
 	return (
 		<div
-			className={`${width} mx-auto h-full py-4 pb-8 relative`}
+			className={`${width} mx-auto h-full ${title ? 'pt-10':'pt-2'} pb-2 relative`}
 			onClick={(e) => {
 				updateInfo(e, "Telangana State");
 				setSelectedDistrict("");
@@ -28,7 +28,7 @@ const Map = ({ setDistrict, setEnergy, width, title }) => {
 				title={title}
 			/>
 			{title && (
-				<p className="absolute top-2 right-0  text-[#535A6C] font-bold text-[16px]">
+				<p className="absolute top-1 left-[25%]  text-[#535A6C] font-bold text-[16px]">
 					Districtwide Energy Production
 				</p>
 			)}

@@ -93,12 +93,12 @@ const LineChart = () => {
 				},
 			},
 			labels: [
-				"03/15/2023",
-				"03/16/2023",
-				"03/17/2023",
-				"03/18/2023",
-				"03/19/2023",
-				"03/20/2023",
+				"15/03/2023",
+				"16/03/2023",
+				"17/03/2023",
+				"18/03/2023",
+				"19/03/2023",
+				"20/03/2023",
 			],
 			xaxis: {
 				tooltip: {
@@ -119,7 +119,11 @@ const LineChart = () => {
 		chartLine.render();
 	}, []);
 
-	return <div id="line-adwords" ref={chartRef} />;
+	return (
+		<div className="h-full mt-2">
+			<div id="line-adwords" ref={chartRef} />
+		</div>
+	);
 };
 
 export default LineChart;

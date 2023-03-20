@@ -21,7 +21,7 @@ const LandingPage = () => {
 					<Map
 						setDistrict={setDistrict}
 						setEnergy={setEnergy}
-						width="w-[80%]"
+						width="w-[75%]"
 					/>
 				</div>
 				<SelectedDistrict district={district} energy={energy} />

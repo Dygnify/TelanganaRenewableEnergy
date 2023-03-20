@@ -44,7 +44,7 @@ const SelectedDistrict = ({ district, energy }) => {
 							/>
 						</div>
 						<p className="text-2xl text-[#ff9100ef] drop-shadow-lg">
-							{energy * 1500} Mt
+							{energy * 1.5} Gt
 						</p>
 					</div>
 				</div>

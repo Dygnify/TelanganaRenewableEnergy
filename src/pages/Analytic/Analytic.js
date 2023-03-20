@@ -21,7 +21,7 @@ const Analytic = () => {
 				<section className="box-shadow5 min-h-[300px] flex justify-center items-center gradient-bottom rounded-md p-2 border border-[#ccc2ff77]">
 					<Map width="w-[85%]" title={true} />
 				</section>
-				<section className="box-shadow5 min-h-[300px] flex justify-center items-center gradient-bottom rounded-md p-2 border border-[#ccc2ff77]">
+				<section className="box-shadow5 min-h-[300px] flex justify-center items-center gradient-bottom rounded-md p-2 border border-[#ccc2ff77] relative">
 					<LineChart />
 				</section>
 			</div>

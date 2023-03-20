@@ -79,6 +79,14 @@ const DashboardChart1 = () => {
 		},
 		
 	];
+	const getTotalEnergyProduced = () => {
+		let sum =0;
+		let len = series[0]?.data.length;
+		for(let i=0; i<len; i++){
+			sum+=series[0]?.data[i];
+		}
+		return sum;
+	}
 
 	return (
 		<div
@@ -87,9 +95,12 @@ const DashboardChart1 = () => {
 			data-aos-duration="1000"
 		>
 			<ReactApexChart options={options} series={series} type="area" />
-			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-slate-500 drop-shadow-lg">
-				<span>Solar Energy Produced</span>
-			</p>
+			<div className="absolute top-[10px] left-[12px] font-semibold text-xl text-font-semibold text-slate-500 drop-shadow-lg flex flex-col gap-4">
+				<p>Solar Energy Produced</p>
+				<p className="text-[#04796f] text-[32px] font-bold flex justify-center -mt-1">
+					{getTotalEnergyProduced()} KW
+				</p>
+			</div>
 		</div>
 	);
 };

@@ -35,11 +35,11 @@ const ModalController = () => {
 	return (
 		<div className="my-modal">
 			<div
-				className="my-modal-body w-1/2 h-[335px] rounded-[15px]"
+				className="my-modal-body w-1/2 min-h-[335px] rounded-[15px]"
 				data-aos="zoom-in"
 				data-aos-duration="1000"
 			>
-				<div className="box-shadow4 border border-[#e9e5fdc7] rounded-[15px] p-4 w-full h-full mx-auto">
+				<div className="box-shadow4 rounded-[15px] p-4 w-full h-full mx-auto">
 					<div className="flex justify-end  items-center -mt-2 ">
 						<label
 							onClick={() => {
