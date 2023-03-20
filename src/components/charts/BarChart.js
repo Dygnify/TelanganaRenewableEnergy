@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
 
 const data = {
-	labels: ["January", "February", "March", "April", "May", "June", "July"],
+	labels: ["September","October", "November" ,"December", "January", "February", "March"],
 	values: [300, 200, 300, 400, 500, 450, 230],
 	colors: [
 		"rgba(255, 99, 132, 0.4)",
@@ -67,7 +67,7 @@ const BarChart = () => {
 						},
 						title: {
 							display: true,
-							text: "( Custom Chart Title )",
+							text: "( Energy Produced in MW )",
 							position:'left'
 						},
 					},

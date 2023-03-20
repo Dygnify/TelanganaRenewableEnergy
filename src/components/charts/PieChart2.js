@@ -7,7 +7,7 @@ const PieChart2 = () => {
 			// width: 380,
 			type: "polarArea",
 		},
-		series: [42, 47, 52, 58, 65],
+		series: [420, 470, 520, 580, 650],
 		colors: ["#FF6384",
 					"#36A2EB",
 					"#FFCE56",
@@ -24,12 +24,11 @@ const PieChart2 = () => {
 			opacity: 1,
 		},
 		labels: [
-			"Label 1",
-			"Label 2",
-			"Label 3",
-			"Label 4",
-			"Label 5",
-			"Label 6",
+			"Solar Furnace",
+			"Household Solar rooftop",
+			"Solar Pump",
+			"Solar Street Lights",
+			"Industrial Solar Rooftop"
 		],
 		stroke: {
 			width: 0.2,

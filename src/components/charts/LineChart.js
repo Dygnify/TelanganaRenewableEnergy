@@ -56,28 +56,28 @@ const LineChart = () => {
 			},
 			series: [
 				{
-					name: "Low",
-					data: [1, 15, 26, 20, 33, 22],
+					name: "Solar Pump",
+					data: [10, 15, 26, 20, 33, 22],
 				},
 				{
-					name: "Medium",
-					data: [3, 33, 21, 42, 19, 32],
+					name: "Solar Street Light",
+					data: [30, 33, 21, 42, 19, 32],
 				},
 				{
-					name: "High",
-					data: [0, 39, 52, 11, 29, 63],
+					name: "Industrial Solar Rooftop",
+					data: [15, 39, 52, 25, 29, 63],
 				},
 			],
 			title: {
-				text: "Solar Project",
+				text: "Energy Produced",
 				align: "left",
 				offsetY: 25,
 				offsetX: 20,
 			},
 			subtitle: {
-				text: "Statistics",
-				offsetY: 55,
-				offsetX: 20,
+				text: "(in MW)",
+				offsetY: 68,
+				offsetX: -5,
 			},
 			markers: {
 				size: 6,
@@ -93,12 +93,12 @@ const LineChart = () => {
 				},
 			},
 			labels: [
-				"01/15/2002",
-				"01/16/2002",
-				"01/17/2002",
-				"01/18/2002",
-				"01/19/2002",
-				"01/20/2002",
+				"03/15/2023",
+				"03/16/2023",
+				"03/17/2023",
+				"03/18/2023",
+				"03/19/2023",
+				"03/20/2023",
 			],
 			xaxis: {
 				tooltip: {
