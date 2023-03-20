@@ -36,7 +36,7 @@ const Profile = () => {
 							<span>Email:</span> <span>cnreddy@gmail.com</span>
 						</p>
 						<p className="flex justify-between">
-							<span>Phone:</span> <span>+91 771909209</span>
+							<span>Phone:</span> <span>+91 9860431431</span>
 						</p>
 					</div>
 				</div>

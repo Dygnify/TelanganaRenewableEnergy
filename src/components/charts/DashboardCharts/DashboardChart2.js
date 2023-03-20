@@ -89,7 +89,7 @@ const DashboardChart2 = () => {
 		>
 			<ReactApexChart options={options} series={series} type="area" />
 			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-font-semibold text-slate-500 drop-shadow-lg">
-				<span>Energy Consumed</span>
+				<span>Solar Energy Consumed</span>
 			</p>
 		</div>
 	);

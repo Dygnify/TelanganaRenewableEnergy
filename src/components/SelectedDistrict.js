@@ -27,7 +27,7 @@ const SelectedDistrict = ({ district, energy }) => {
 							/>
 						</div>
 						<p className="text-2xl text-[#ff9100ef] drop-shadow-lg">
-							{energy} Kw
+							{energy} MW
 						</p>
 					</div>
 				</div>
@@ -44,7 +44,7 @@ const SelectedDistrict = ({ district, energy }) => {
 							/>
 						</div>
 						<p className="text-2xl text-[#ff9100ef] drop-shadow-lg">
-							{energy * 1500} Kw
+							{energy * 1500} Mt
 						</p>
 					</div>
 				</div>

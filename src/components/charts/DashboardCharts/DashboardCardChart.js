@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
 
-const DashboardCardChart = ({ creditLoaderDisplayed=true, chainScore=750 }) => {
+const DashboardCardChart = ({ creditLoaderDisplayed=true, chainScore=689 }) => {
 	const [state, setState] = useState({
 		otherChart: {
 			series: [0],

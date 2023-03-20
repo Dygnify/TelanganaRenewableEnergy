@@ -27,7 +27,7 @@ const MapSvg = ({ selectedDistrict, setSelectedDistrict, updateInfo }) => {
 				.attr("class", "d3-tip my-tooltip box-shadow4 gradient-top")
 				.offset([20, 0]).html(`<div class='tooltip-info'>
 							<p class='district'>${districtNameList[i]}</p>
-							<p class='energy'>Energy Produced: <span class='value'>${districtEnergyList[i]} KW</span></p>
+							<p class='energy'>Energy Produced: <span class='value'>${districtEnergyList[i]} MW</span></p>
 						</div>`);
 
 			d3.select(tooltipRefs[i].current).call(tipObject);

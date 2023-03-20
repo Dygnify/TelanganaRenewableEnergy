@@ -75,7 +75,7 @@ const DashboardChart1 = () => {
 	const series = [
 		{
 			name: "Energy Produced",
-			data: [85, 80, 85, 90, 95],
+			data: [90, 95, 95, 100, 105],
 		},
 		
 	];
@@ -88,7 +88,7 @@ const DashboardChart1 = () => {
 		>
 			<ReactApexChart options={options} series={series} type="area" />
 			<p className="absolute top-[10px] left-[12px] font-semibold text-xl text-slate-500 drop-shadow-lg">
-				<span>Energy Produced</span>
+				<span>Solar Energy Produced</span>
 			</p>
 		</div>
 	);

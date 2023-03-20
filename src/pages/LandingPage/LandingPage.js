@@ -14,7 +14,7 @@ const LandingPage = () => {
 				data-aos-anchor="#example-anchor"
 				data-aos-duration="1000"
 			>
-				Telagana Solar Energy profile
+				Telangana Solar Energy profile
 			</h2>
 			<div className="flex gap-8">
 				<div className=" box-shadow4 w-2/3  flex justify-center items-center rounded-md  bg-[#f8fafa] border border-[#ccc2ff77] relative home-page-sticky">
