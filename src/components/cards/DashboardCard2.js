@@ -1,12 +1,15 @@
 import React from "react";
 import demoImg from "../../images/solar-pump.png";
 import iconImg from "../../images/renewable-energy.jpg";
+import iconImg2 from "../../images/energy_consumed.jpeg";
+import iconImg3 from "../../images/co2 reduction.png";
+import iconImg4 from "../../images/Sustainability Score.png";
 
 const demoInfo = [
-	{ text: "Energy Produced", energy: "354 KW" },
-	{ text: "Energy Consumed", energy: "296 KW" },
-	{ text: "Carbon Emission Reduced", energy: "444 Mt" },
-	{ text: "Sustainability Score", energy: "126 GS" },
+	{ text: "Energy Produced", energy: "354 KW", img: iconImg },
+	{ text: "Energy Consumed", energy: "296 KW", img: iconImg2 },
+	{ text: "Carbon Emission Reduced", energy: "444 Mt", img: iconImg3 },
+	{ text: "Sustainability Score", energy: "126 GS", img: iconImg4 },
 ];
 
 const DashboardCard2 = () => {
@@ -26,9 +29,9 @@ const DashboardCard2 = () => {
 						className="flex justify-between px-2 py-2 items-center border border-[#ccc2ff8f] hover:border-[#ccc2ff] rounded-[5px]  hover:scale-105 transition ease-in-out duration-300 box-shadow5 gradient-right"
 					>
 						<div className="flex gap-2 ">
-							<div className="w-[20px] flex items-center">
+							<div className="w-[20px] flex items-center mix-blend-multiply">
 								<img
-									src={iconImg}
+									src={item.img}
 									alt=""
 									className="w-full rounded-full"
 								/>

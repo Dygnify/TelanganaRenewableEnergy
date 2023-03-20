@@ -22,7 +22,7 @@ const DashboardCard1 = () => {
 						className="flex justify-between p-2 items-center border border-[#ccc2ff8f] hover:border-[#ccc2ff] rounded-[5px]  hover:scale-105 transition ease-in-out duration-300 box-shadow5 gradient-right"
 					>
 						<div className="flex gap-2 ">
-							<div className="w-[20px] flex items-center">
+							<div className="w-[20px] flex items-center mix-blend-multiply">
 								<img
 									src={iconImg}
 									alt=""
