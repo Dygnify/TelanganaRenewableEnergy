@@ -51,8 +51,8 @@
 /* svg styles ended  */
 
 .my-tooltip {
-	min-width: 220px;
-	padding: 0.5rem 0.5rem 1rem;
+	min-width: 230px;
+	padding: 0.5rem 0.5rem 1rem 0.5rem;
 	border-radius: 5px;
 	background-color: #f2edfa;
 	color: rgb(11, 80, 112);
@@ -73,6 +73,7 @@
 	margin: 0;
 }
 .tooltip-info {
+	width: 90%;
 	text-align: center;
 }
 .tooltip-info .district {
@@ -87,6 +88,7 @@
 .tooltip-info .energy {
 	font-size: 14px;
 	font-weight: 600;
+	margin-right: 5px;
 }
 .tooltip-info .value {
 	font-weight: normal;
