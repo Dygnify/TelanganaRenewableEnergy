@@ -38,15 +38,15 @@ const MapSvg = ({
 				)
 				.offset([20, 0]).html(`<div class='tooltip-info'>
 							<p class='district'>${districtNameList[i]}</p>
-							<p class='my-flex'><span class='energy'>Energy Produced</span><span class='value'>:${
+							<p class='my-flex'><span class='energy'>Energy Produced</span><span class='value'>${
 								districtEnergyList[i]
 							} MW</span></p>
 							<p class="${
 								isAnalytic === true ? "show my-flex" : "hide"
-							}"><span class='energy'>Dummy text1: </span><span class="value">:Value1</span></p>
+							}"><span class='energy'>Solar Pumps </span><span class="value">${districtEnergyList[i]/4} MW</span></p>
 							<p class="${
 								isAnalytic === true ? "show my-flex" : "hide"
-							}"><span class='energy'>Dummy text2: </span><span class="value">:Value2</span></p>
+							}"><span class='energy'>Others</span><span class="value">${districtEnergyList[i] - (districtEnergyList[i]/4)} MW</span></p>
 						</div>`);
 
 			d3.select(tooltipRefs[i].current).call(tipObject);
