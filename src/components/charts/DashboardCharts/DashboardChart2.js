@@ -13,7 +13,7 @@ const DashboardChart2 = () => {
 			},
 		},
 		xaxis: {
-			categories: ['Octomber','November', 'December', 'January', 'February', 'March'],
+			categories: ['November', 'December', 'January', 'February', 'March'],
 			labels: {
 				show: false,
 			},
@@ -77,7 +77,7 @@ const DashboardChart2 = () => {
 		{
 			name: "Energy Consumed",
 			
-			data: [20, 52, 48, 60, 51, 105],
+			data: [52, 48, 55, 51, 65],
 		},
 	];
 const getTotalEnergyProduced = () => {

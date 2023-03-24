@@ -55,20 +55,20 @@ const LineChart = () => {
 			},
 			series: [
 				{
-					name: "Solar Pump",
-					data: [10, 15, 26, 20, 33, 22],
+					name: "Industrial Solar Rooftop",
+					data: [15, 39, 52, 45, 39, 63],
 				},
 				{
 					name: "Solar Street Light",
 					data: [30, 33, 21, 42, 19, 32],
 				},
 				{
-					name: "Industrial Solar Rooftop",
-					data: [15, 39, 52, 25, 29, 63],
-				},
+					name: "Others",
+					data: [10, 15, 26, 20, 33, 22],
+				}
 			],
 			title: {
-				text: "Daily Categorywise Energy Produced",
+				text: "Daily Categorywise Energy Production",
 				align: "center",
 				offsetY: 0,
 				offsetX: 0,

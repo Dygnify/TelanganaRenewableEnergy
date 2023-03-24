@@ -48,7 +48,7 @@ const Header = () => {
 					to="/analytic"
 					className={({ isActive }) => (isActive ? "active" : "")}
 				>
-					<li>Analytic</li>
+					<li>Analytics</li>
 				</NavLink>
 
 				{!user ? (

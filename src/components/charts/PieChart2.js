@@ -28,7 +28,7 @@ const PieChart2 = () => {
 			opacity: 1,
 		},
 		title: {
-			text: "Categorywise Energy Produced",
+			text: "Categorywise Energy Production (MW)",
 			align: "center",
 			offsetY: 0,
 			offsetX: 0,

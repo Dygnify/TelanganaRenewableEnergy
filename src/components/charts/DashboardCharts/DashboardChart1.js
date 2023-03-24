@@ -75,7 +75,7 @@ const DashboardChart1 = () => {
 	const series = [
 		{
 			name: "Energy Produced",
-			data: [90, 95, 95, 100, 105],
+			data: [90, 95, 95, 98, 99],
 		},
 		
 	];
