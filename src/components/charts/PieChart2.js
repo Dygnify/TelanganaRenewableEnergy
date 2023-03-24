@@ -4,7 +4,6 @@ import Chart from "react-apexcharts";
 const PieChart2 = () => {
 	const options = {
 		chart: {
-			// width: 380,
 			type: "polarArea",
 		},
 		series: [420, 470, 520, 580, 650],
@@ -65,10 +64,17 @@ const PieChart2 = () => {
 				},
 			},
 		},
+		tooltip: {
+			y: {
+				formatter: function (value) {
+					return value + " MW";
+				},
+			},
+		},
 	};
 
 	return (
-		<div className="mt-2" >
+		<div className="mt-2">
 			<Chart
 				options={options}
 				series={options.series}
