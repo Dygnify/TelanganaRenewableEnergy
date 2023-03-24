@@ -52,7 +52,6 @@
 
 .my-tooltip {
 	min-width: 220px;
-	height: 100px;
 	padding: 0.5rem 0.5rem 1rem;
 	border-radius: 5px;
 	background-color: #f2edfa;
@@ -73,18 +72,28 @@
 .my-tooltip p {
 	margin: 0;
 }
-.tooltip-info{
-  text-align: center;
+.tooltip-info {
+	text-align: center;
 }
 .tooltip-info .district {
 	color: #8110fe;
-  font-size:1rem;
-  font-weight: 700;
+	font-size: 1rem;
+	font-weight: 700;
+}
+.tooltip-info .my-flex {
+	display: flex;
+	justify-content: space-between;
 }
 .tooltip-info .energy {
-  font-size:14px;
-  font-weight: 600;
+	font-size: 14px;
+	font-weight: 600;
 }
-.tooltip-info .energy .value {
-  font-weight: normal;
+.tooltip-info .value {
+	font-weight: normal;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
 }

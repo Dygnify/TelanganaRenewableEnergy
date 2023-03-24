@@ -4,8 +4,14 @@ import * as d3 from "d3-selection";
 import tip from "d3-tip";
 import { districtNameList, districtEnergyList } from "../energyInfo";
 
-const MapSvg = ({ selectedDistrict, setSelectedDistrict, updateInfo }) => {
+const MapSvg = ({
+	selectedDistrict,
+	setSelectedDistrict,
+	updateInfo,
+	isAnalytic,
+}) => {
 	const TOTAL_DISTRICTS = 33;
+	console.log("rakib ", isAnalytic);
 	function usePathRefs(count) {
 		const pathRefs = useRef([]);
 
@@ -24,10 +30,23 @@ const MapSvg = ({ selectedDistrict, setSelectedDistrict, updateInfo }) => {
 		const paths = [];
 		for (let i = 0; i < TOTAL_DISTRICTS; i++) {
 			const tipObject = tip()
-				.attr("class", "d3-tip my-tooltip box-shadow4 gradient-top")
+				.attr(
+					"class",
+					`d3-tip my-tooltip box-shadow4 gradient-top ${
+						isAnalytic === true ? "h-[150px]" : "h-[100px]"
+					}`
+				)
 				.offset([20, 0]).html(`<div class='tooltip-info'>
 							<p class='district'>${districtNameList[i]}</p>
-							<p class='energy'>Energy Produced: <span class='value'>${districtEnergyList[i]} MW</span></p>
+							<p class='my-flex'><span class='energy'>Energy Produced</span><span class='value'>:${
+								districtEnergyList[i]
+							} MW</span></p>
+							<p class="${
+								isAnalytic === true ? "show my-flex" : "hide"
+							}"><span class='energy'>Dummy text1: </span><span class="value">:Value1</span></p>
+							<p class="${
+								isAnalytic === true ? "show my-flex" : "hide"
+							}"><span class='energy'>Dummy text2: </span><span class="value">:Value2</span></p>
 						</div>`);
 
 			d3.select(tooltipRefs[i].current).call(tipObject);
