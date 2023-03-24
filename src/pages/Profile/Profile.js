@@ -43,16 +43,14 @@ const Profile = () => {
 				</div>
 				<div className="mt-8 p-2">
 					<p className="border-b-[1px] border-[#e9e5fdc7] font-semibold text-slate-500 drop-shadow-lg">
-						Dummy Info:
+						Profile:
 					</p>
 					<p className="text-[12px] text-justify">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Tenetur, nostrum aperiam harum, accusantium porro eius
-						ipsam commodi consectetur voluptatem nulla earum
-						corporis fugit voluptatum architecto, voluptatibus rem
-						voluptate!, eum dolores maiores deserunt tenetur et est
-						aliquam rem. Quia id molestiae animi maiores?
+					Mr. C. Narayana Reddy is a farmer who lives in a small village in Mulugu district of Telangana. He owns around 4 acres of land which he inherited from his father. Narayana Reddy primarily grows paddy and cotton crops, which are well-suited to the fertile soil in the region.
+					
 					</p>
+					<br/>
+					<p className="text-[12px] text-justify">He has installed a solar pump to draw water from his well for irrigation purposes, and has also installed a solar rooftop system to generate electricity for his home and farm. The solar pump and rooftop system were installed in 2019, with the help of a government subsidy program aimed at promoting renewable energy adoption in rural areas.</p>
 				</div>
 			</section>
 			<section className="profile-mid-section dashboard w-8/12 min-h-[500px] rounded-md  border border-[#e9e5fd]">

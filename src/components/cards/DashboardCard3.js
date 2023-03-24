@@ -6,10 +6,10 @@ import iconImg3 from "../../images/co2 reduction.png";
 import iconImg4 from "../../images/Sustainability Score.png";
 
 const demoInfo = [
-	{ text: "Energy Produced", energy: "354 KW", img: iconImg },
-	{ text: "Energy Consumed", energy: "296 KW", img: iconImg2 },
-	{ text: "Carbon Emission Reduced", energy: "444 Mt", img: iconImg3 },
-	{ text: "Sustainability Score", energy: "126 GS", img: iconImg4 },
+	{ text: "Energy produced", energy: "832 KW", img: iconImg },
+	{ text: "Energy consumed", energy: "692 KW", img: iconImg2 },
+	{ text: "GHG emissions reduced", energy: "1,038 Mt", img: iconImg3 },
+	{ text: "Sustainability score", energy: "261 GS", img: iconImg4 },
 ];
 
 const DashboardCard3 = () => {

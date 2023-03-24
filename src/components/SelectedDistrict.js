@@ -33,7 +33,7 @@ const SelectedDistrict = ({ district, energy }) => {
 				</div>
 				<div className="w-5/6 p-2 rounded-md gradient-right  box-shadow5">
 					<p className="text-sm text-center font-semibold text-slate-500">
-						CO<sub>2</sub> Emission Reduced
+						GHG Emissions Reduced
 					</p>
 					<div className="flex items-center mt-2 gap-6 p-2  rounded-[100px] mx-4 gradient-right border border-slate-100">
 						<div className="w-16 h-16 border border-[#FE9710] rounded-full p-[2px]">

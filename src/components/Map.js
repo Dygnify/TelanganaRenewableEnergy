@@ -29,7 +29,7 @@ const Map = ({ setDistrict, setEnergy, width, title, isAnalytic=false }) => {
 			/>
 			{title && (
 				<p className="absolute top-1 left-[25%]  text-[#535A6C] font-bold text-[16px]">
-					Districtwide Energy Production
+					Districtwise Energy Production
 				</p>
 			)}
 		</div>
