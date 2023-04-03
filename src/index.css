@@ -48,6 +48,9 @@ code {
 .my-text-shadow {
 	text-shadow: 3px 3px 5px #9e9e9eaf;
 }
+.my-table-row:hover {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 .gradient-right {
 	background-image: linear-gradient(
@@ -70,7 +73,6 @@ code {
 		rgba(168, 154, 255, 0.260833) 98.52%
 	);
 }
-
 
 /* sticky section style*/
 .profile section,

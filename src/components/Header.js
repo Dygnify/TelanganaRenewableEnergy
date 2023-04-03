@@ -52,6 +52,16 @@ const Header = () => {
 				</NavLink>
 
 				{!user ? (
+					<span></span>
+				) : (
+					<NavLink
+						to="/myDevices"
+						className={({ isActive }) => (isActive ? "active" : "")}
+					>
+						<li>My Devices</li>
+					</NavLink>
+				)}
+				{!user ? (
 					<NavLink
 						to="/signIn"
 						className={({ isActive }) => (isActive ? "active" : "")}
