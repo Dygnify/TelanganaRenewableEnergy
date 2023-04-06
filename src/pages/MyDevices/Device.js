@@ -30,17 +30,17 @@ const Device = ({ dummyTable }) => {
 						<p className="w-1/3 md:w-2/12 my-auto ">
 							{data.totalEnergy}
 						</p>
-						<p className="w-1/3 md:w-2/12 my-auto text-center">
-							<span
-								className={`border ${
+						<div className="w-1/3 md:w-2/12 my-auto text-center">
+							<p
+								className={`w-[100px] border ${
 									data.status === "Inactive"
 										? "bg-[#f7995194]  border-[#f78e3e]"
 										: "bg-[#4cf584a4] border-[#03b43e]"
-								} px-5 rounded-full box-shadow3 `}
+								} px-5 rounded-full box-shadow3 mx-auto text-center`}
 							>
 								{data.status}
-							</span>
-						</p>
+							</p>
+						</div>
 					</div>
 				))}
 			</div>

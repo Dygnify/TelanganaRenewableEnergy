@@ -2,6 +2,10 @@ import React from "react";
 import "../Profile/Profile.css";
 import LeftProfilePanel from "../Profile/LeftProfilePanel";
 import Device from "./Device";
+import DashboardChart1 from "../../components/charts/DashboardCharts/DashboardChart1";
+import DashboardChart2 from "../../components/charts/DashboardCharts/DashboardChart2";
+import SiteConfig from "./SiteConfig";
+import SiteLiveData from "./SiteLiveData";
 
 const MyDevices = () => {
 	const dummyTable = [
@@ -49,16 +53,31 @@ const MyDevices = () => {
 		},
 	];
 	return (
-		<div className="text-slate-500 gap-4 flex  box-border profile">
-			<LeftProfilePanel />
-			<section className="w-10/12 space-y-8">
-				<div className="w-full  rounded-md  border border-[#e9e5fd] box-shadow4">
-					<h2 className=" text-[1.4375rem] lg:text-[2rem] font-semibold text-slate-500  drop-shadow-lg px-2">
+		<div className="text-slate-500 gap-4 w-full profile">
+			<section className=" space-y-8">
+				<div className="w-full  rounded-md  ">
+					<h2 className="text-[1.4375rem] lg:text-[2rem] font-semibold text-slate-500  drop-shadow-lg px-2">
 						Solar Pump
 					</h2>
+					<div>
+						<h3 className="font-semibold text-xl text-slate-400  drop-shadow-lg px-2 text-center">
+							Site Configuration Details
+						</h3>
+						<SiteConfig />
+					</div>
+					<div className="mt-8">
+						<h3 className="font-semibold text-xl text-slate-400  drop-shadow-lg px-2 text-center">
+							Site Live Data
+						</h3>
+						<SiteLiveData />
+					</div>
+					<div className="mt-8 grid grid-cols-2 gap-4 p-2">
+						<DashboardChart1 />
+						<DashboardChart2 />
+					</div>
 					<Device dummyTable={dummyTable} />
 				</div>
-				<div className="w-full  rounded-md  border border-[#e9e5fd] box-shadow4">
+				<div className="w-full  rounded-md  ">
 					<h2 className=" text-[1.4375rem] lg:text-[2rem] font-semibold text-slate-500  drop-shadow-lg px-2">
 						Solar Rooftop
 					</h2>
