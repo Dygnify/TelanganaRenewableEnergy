@@ -14,7 +14,7 @@ const Device = ({ dummyTable }) => {
 				</p>
 				<p className=" md:block w-1/3 md:w-2/12 my-auto ">Status</p>
 			</div>
-			<div className="p-1 rounded-xl my-5 flex flex-col gap-4 max-h-[250px] overflow-auto">
+			<div className="p-1 pt-0 pb-4 rounded-xl my-5 flex flex-col gap-4 max-h-[250px] overflow-auto border border-[#d3e1f5a9]">
 				{dummyTable.map((data, i) => (
 					<div
 						key={i}

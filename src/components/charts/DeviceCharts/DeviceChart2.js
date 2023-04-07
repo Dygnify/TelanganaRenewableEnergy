@@ -1,16 +1,16 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import ApexCharts from "apexcharts";
 
 const DeviceChart2 = () => {
 	const chartRef = useRef(null);
-	let chart = null;
 
 	useEffect(() => {
 		const options = {
 			chart: {
-				type: "area",
+				type: "bar",
+				width: "600",
+				height: "350",
 				stacked: false,
-				height: 350,
 				toolbar: {
 					show: false,
 				},
@@ -18,16 +18,32 @@ const DeviceChart2 = () => {
 					enabled: false,
 				},
 			},
-			dataLabels: {
-				enabled: false,
+
+			title: {
+				text: "This is a demo bar chart",
+				align: "center",
+				offsetY: 20,
+				offsetX: 0,
+				style: {
+					fontSize: "16px",
+					fontWeight: "bold",
+					color: "#535A6C",
+				},
 			},
-			stroke: {
-				curve: "straight",
+			subtitle: {
+				text: "(KWP)",
+				offsetY: 42,
+				offsetX: -5,
+				style: {
+					fontSize: "12px",
+					fontWeight: "bold",
+					color: "#535A6C",
+				},
 			},
 			series: [
 				{
-					name: "Series A",
-					data: [30, 40, 35, 20, 49, 55, 70, 61, 125],
+					name: "power",
+					data: [30, 40, 45, 50, 49, 60, 70, 91, 120],
 				},
 			],
 			xaxis: {
@@ -43,38 +59,37 @@ const DeviceChart2 = () => {
 					"Sep",
 				],
 			},
-			yaxis: {
-				title: {
-					text: "Sales",
+			grid: {
+				show: true,
+				borderColor: "#AFBAC9",
+				strokeDashArray: 0,
+				position: "back",
+				xaxis: {
+					lines: {
+						show: false,
+					},
 				},
-			},
-			tooltip: {
-				shared: true,
-				intersect: false,
-				y: {
-					formatter: function (y) {
-						if (typeof y !== "undefined") {
-							return y.toFixed(0) + " dollars";
-						}
-						return y;
+				yaxis: {
+					lines: {
+						show: true,
 					},
 				},
 			},
 		};
 
-		if (chartRef.current) {
-			chart = new ApexCharts(chartRef.current, options);
-			chart.render();
-		}
+		const chart = new ApexCharts(chartRef.current, options);
+		chart.render();
 
 		return () => {
-			if (chart) {
-				chart.destroy();
-			}
+			chart.destroy();
 		};
 	}, []);
 
-	return <div ref={chartRef} />;
+	return (
+		<div className="flex justify-center box-shadow rounded-md border border-[#def8f6f5]">
+			<div ref={chartRef} />
+		</div>
+	);
 };
 
 export default DeviceChart2;

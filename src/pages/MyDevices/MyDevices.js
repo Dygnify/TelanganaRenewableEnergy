@@ -53,33 +53,49 @@ const MyDevices = () => {
 	];
 	return (
 		<div className="text-slate-500 gap-4 w-full profile">
-			<section className=" space-y-8">
+			<section className=" space-y-12">
 				<div className="w-full  rounded-md  ">
 					<h2 className="text-[1.4375rem] lg:text-[2rem] font-semibold text-slate-500  drop-shadow-lg px-2">
 						Solar Pump
 					</h2>
-					<div>
-						<h3 className="font-semibold text-xl text-slate-400  drop-shadow-lg px-2 text-center">
+					<div className="mt-4">
+						<h3 className="font-semibold text-xl text-slate-500  drop-shadow-lg px-2 text-center">
 							Site Configuration Details
 						</h3>
 						<SiteConfig />
 					</div>
 					<div className="mt-8">
-						<h3 className="font-semibold text-xl text-slate-400  drop-shadow-lg px-2 text-center">
+						<h3 className="font-semibold text-xl text-slate-500  drop-shadow-lg px-2 text-center">
 							Site Live Data
 						</h3>
 						<SiteLiveData />
 					</div>
 					<div className="mt-12 grid grid-cols-2 gap-4 p-2">
 						<DeviceChart1 />
-						<DeviceChart1 />
+						<DeviceChart2 />
 					</div>
 					<Device dummyTable={dummyTable} />
 				</div>
-				<div className="w-full  rounded-md  ">
+				<div className="w-full  rounded-md">
 					<h2 className=" text-[1.4375rem] lg:text-[2rem] font-semibold text-slate-500  drop-shadow-lg px-2">
 						Solar Rooftop
 					</h2>
+					<div className="mt-4">
+						<h3 className="font-semibold text-xl text-slate-500  drop-shadow-lg px-2 text-center">
+							Site Configuration Details
+						</h3>
+						<SiteConfig />
+					</div>
+					<div className="mt-8">
+						<h3 className="font-semibold text-xl text-slate-500  drop-shadow-lg px-2 text-center">
+							Site Live Data
+						</h3>
+						<SiteLiveData />
+					</div>
+					<div className="mt-12 grid grid-cols-2 gap-4 p-2">
+						<DeviceChart1 />
+						<DeviceChart2 />
+					</div>
 					<Device dummyTable={dummyTable} />
 				</div>
 			</section>
