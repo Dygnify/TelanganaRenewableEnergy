@@ -2,8 +2,8 @@ import React from "react";
 
 const Device = ({ dummyTable }) => {
 	return (
-		<div className="">
-			<div className="px-1 mt-8 py-1 gap-4 md:gap-0 md:justify-around flex font-bold border-y border-slate-200 text-center">
+		<div className="mt-12">
+			<div className="px-1 py-1 gap-4 md:gap-0 md:justify-around flex font-bold border-y border-slate-200 text-center">
 				<p className="w-1/3 md:w-3/12 my-auto ">Time/Date</p>
 				<p className=" md:block w-1/3 md:w-3/12 my-auto ">Unit Name</p>
 				<p className=" md:block w-1/3 md:w-2/12 my-auto ">

@@ -1,11 +1,10 @@
 import React from "react";
 import "../Profile/Profile.css";
-import LeftProfilePanel from "../Profile/LeftProfilePanel";
 import Device from "./Device";
-import DashboardChart1 from "../../components/charts/DashboardCharts/DashboardChart1";
-import DashboardChart2 from "../../components/charts/DashboardCharts/DashboardChart2";
 import SiteConfig from "./SiteConfig";
 import SiteLiveData from "./SiteLiveData";
+import DeviceChart1 from "../../components/charts/DeviceCharts/DeviceChart1";
+import DeviceChart2 from "../../components/charts/DeviceCharts/DeviceChart2";
 
 const MyDevices = () => {
 	const dummyTable = [
@@ -71,9 +70,9 @@ const MyDevices = () => {
 						</h3>
 						<SiteLiveData />
 					</div>
-					<div className="mt-8 grid grid-cols-2 gap-4 p-2">
-						<DashboardChart1 />
-						<DashboardChart2 />
+					<div className="mt-12 grid grid-cols-2 gap-4 p-2">
+						<DeviceChart1 />
+						<DeviceChart1 />
 					</div>
 					<Device dummyTable={dummyTable} />
 				</div>
