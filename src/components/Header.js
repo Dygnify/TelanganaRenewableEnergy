@@ -13,11 +13,6 @@ const Header = () => {
 		if (!user) setUser(location.pathname.includes("profile"));
 	}, [location, user]);
 
-	console.log(
-		isSignInOpen,
-		location.pathname,
-		location.pathname.includes("signIn")
-	);
 
 	return (
 		<nav className="box-shadow5 sticky top-0 z-50 flex justify-between items-center py-0 px-6 text-[#fff] bg-[#ffffffff] header-nav">

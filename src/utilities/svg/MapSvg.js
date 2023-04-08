@@ -11,7 +11,6 @@ const MapSvg = ({
 	isAnalytic,
 }) => {
 	const TOTAL_DISTRICTS = 33;
-	console.log("rakib ", isAnalytic);
 	function usePathRefs(count) {
 		const pathRefs = useRef([]);
 

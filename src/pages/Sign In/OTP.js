@@ -9,7 +9,6 @@ const Form = ({ handlePrev, number }) => {
 
 	const otpHandler = (e) => {
 		e.preventDefault();
-		console.log(e.target.otp.value);
 	};
 	return (
 		<div data-aos="zoom-in" data-aos-duration="1000">

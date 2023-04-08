@@ -45,7 +45,7 @@ code {
 .box-shadow5 {
 	box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
-.box-shadow6{
+.box-shadow6 {
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .my-text-shadow {
@@ -96,12 +96,4 @@ code {
 		margin: 0;
 		-moz-appearance: textfield !important;
 	}
-}
-
-.bsorder-style{
-	border: 1px solid #e3defc48;
-	border-left-color: #e5e1fde5;
-	border-right-color: #dfdaf7e5;
-	bordser-top-left-radius: 12px;
-	bordser-bottom-right-radius: 12px;
 }

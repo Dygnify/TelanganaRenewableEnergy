@@ -2,33 +2,6 @@ import React from "react";
 import Chart from "react-apexcharts";
 
 const DeviceChart1 = () => {
-	const chartData = [
-		{
-			x: "Jan",
-			y: 20,
-		},
-		{
-			x: "Feb",
-			y: 35,
-		},
-		{
-			x: "Mar",
-			y: 40,
-		},
-		{
-			x: "Apr",
-			y: 30,
-		},
-		{
-			x: "May",
-			y: 45,
-		},
-		{
-			x: "Jun",
-			y: 50,
-		},
-	];
-
 	const chartOptions = {
 		chart: {
 			id: "basic-line",
@@ -40,18 +13,18 @@ const DeviceChart1 = () => {
 			},
 		},
 		title: {
-			text: "This is a demo line chart",
+			text: "Site Output Active Power",
 			align: "center",
-			offsetY: 20,
+			offsetY: 12,
 			offsetX: 0,
 			style: {
-				fontSize: "16px",
+				fontSize: "14px",
 				fontWeight: "bold",
 				color: "#535A6C",
 			},
 		},
 		subtitle: {
-			text: "(KWP)",
+			text: "(kWp)",
 			offsetY: 42,
 			offsetX: -5,
 			style: {
@@ -61,7 +34,25 @@ const DeviceChart1 = () => {
 			},
 		},
 		xaxis: {
-			categories: chartData.map((data) => data.x),
+			categories: [
+				"02/04/2023",
+				"03/04/2023",
+				"04/04/2023",
+				"05/04/2023",
+				"06/04/2023",
+				"07/04/2023",
+				"08/04/2023",
+			],
+			tooltip: {
+				enabled: false,
+			},
+			crosshairs: {
+				show: false,
+			},
+		},
+		yaxis: {
+			tickAmount: 6,
+			min: 0,
 		},
 		stroke: {
 			show: true,
@@ -83,12 +74,21 @@ const DeviceChart1 = () => {
 				},
 			},
 		},
+		tooltip: {
+			followCursor: true,
+			custom: function ({ series, seriesIndex, dataPointIndex, w }) {
+				return `<div class=" p-2 bg-[#1e3a5a] text-[#ffffff] text-[14px]">
+							<p>Timestamp: ${w.globals.categoryLabels[dataPointIndex]} 01:12:00 PM</p>
+							<p>Value: ${series[seriesIndex][dataPointIndex]} kWp</p>
+						</div>`;
+			},
+		},
 	};
 
 	const series = [
 		{
 			name: "Series 1",
-			data: chartData.map((data) => data.y),
+			data: [5, 10, 15, 18, 25, 18, 35],
 		},
 	];
 

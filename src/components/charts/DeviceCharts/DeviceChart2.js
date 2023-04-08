@@ -20,18 +20,18 @@ const DeviceChart2 = () => {
 			},
 
 			title: {
-				text: "This is a demo bar chart",
+				text: "Inverter Output Active Power",
 				align: "center",
-				offsetY: 20,
+				offsetY: 12,
 				offsetX: 0,
 				style: {
-					fontSize: "16px",
+					fontSize: "14px",
 					fontWeight: "bold",
 					color: "#535A6C",
 				},
 			},
 			subtitle: {
-				text: "(KWP)",
+				text: "(kWp)",
 				offsetY: 42,
 				offsetX: -5,
 				style: {
@@ -43,21 +43,23 @@ const DeviceChart2 = () => {
 			series: [
 				{
 					name: "power",
-					data: [30, 40, 45, 50, 49, 60, 70, 91, 120],
+					data: [5, 10, 15, 18, 25, 18, 35],
 				},
 			],
 			xaxis: {
 				categories: [
-					"Jan",
-					"Feb",
-					"Mar",
-					"Apr",
-					"May",
-					"Jun",
-					"Jul",
-					"Aug",
-					"Sep",
+					"02/04/2023",
+					"03/04/2023",
+					"04/04/2023",
+					"05/04/2023",
+					"06/04/2023",
+					"07/04/2023",
+					"08/04/2023",
 				],
+			},
+			yaxis: {
+				tickAmount: 6,
+				min: 0,
 			},
 			grid: {
 				show: true,
@@ -73,6 +75,15 @@ const DeviceChart2 = () => {
 					lines: {
 						show: true,
 					},
+				},
+			},
+			tooltip: {
+				followCursor: true,
+				custom: function ({ series, seriesIndex, dataPointIndex, w }) {
+					return `<div class=" p-2 bg-[#1e3a5a] text-[#ffffff] text-[14px]">
+							<p>Timestamp: ${w.globals.labels[dataPointIndex]} 01:12:00 PM</p>
+							<p>Value: ${series[seriesIndex][dataPointIndex]} kWp</p>
+						</div>`;
 				},
 			},
 		};
