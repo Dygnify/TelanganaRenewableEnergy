@@ -43,7 +43,7 @@ const DeviceChart2 = () => {
 			series: [
 				{
 					name: "power",
-					data: [5, 15, 25, 18, 35],
+					data: [14.3, 17.2, 16.9, 19.1, 18.6],
 				},
 			],
 			xaxis: {
