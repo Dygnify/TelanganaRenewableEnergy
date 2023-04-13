@@ -27,7 +27,7 @@ const SiteConfig = () => {
 				</div>
 				<div className="flex flex-col text-right">
 					<span>Units</span>
-					<span>0/2</span>
+					<span>1/2</span>
 				</div>
 			</div>
 			<div className="flex  justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6 border-style">
@@ -40,7 +40,7 @@ const SiteConfig = () => {
 				</div>
 				<div className="flex flex-col text-right">
 					<span>Inverter</span>
-					<span>0/1</span>
+					<span>1/1</span>
 				</div>
 			</div>
 			<div className="flex justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6 border-style">
@@ -49,7 +49,7 @@ const SiteConfig = () => {
 				</div>
 				<div className="flex flex-col text-right">
 					<span>Meter</span>
-					<span>0/1</span>
+					<span>1/1</span>
 				</div>
 			</div>
 			<div className="flex justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6 border-style">

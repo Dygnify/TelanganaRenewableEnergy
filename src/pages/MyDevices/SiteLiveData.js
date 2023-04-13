@@ -18,7 +18,7 @@ const SiteLiveData = () => {
 				</div>
 				<div className="flex flex-col  text-right">
 					<span>Daily Energy</span>
-					<span>8.00 kWh</span>
+					<span>2.30 kWh</span>
 				</div>
 			</div>
 			<div className="flex  justify-between rounded-[5px] py-2 px-1 bg-[#F3FFFE]  box-shadow6 border-style w-2/12">

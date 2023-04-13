@@ -86,7 +86,7 @@ const DeviceChart1 = () => {
 	const series = [
 		{
 			name: "Series 1",
-			data: [5, 15, 25, 18, 35],
+			data: [14.3, 17.2, 16.9, 19.1, 18.6],
 		},
 	];
 
