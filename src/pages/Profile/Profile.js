@@ -7,7 +7,6 @@ import "./Profile.css";
 import DashboardCard3 from "../../components/cards/DashboardCard3";
 import LeftProfilePanel from "./LeftProfilePanel";
 import RightProfilePanel from "./RightProfilePanel";
-import CarbonCredit from "../../components/cards/CarbonCredit";
 
 const Profile = () => {
 	return (
@@ -23,7 +22,6 @@ const Profile = () => {
 				</div>
 				<div className="mt-8 grid grid-cols-1 gap-8 p-2">
 					<DashboardCard1 />
-					<CarbonCredit/>
 					<DashboardCard2 />
 					<DashboardCard3 />
 				</div>

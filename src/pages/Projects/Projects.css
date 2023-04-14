@@ -1,0 +1,10 @@
+.projects-card {
+	background-image: linear-gradient(
+		270deg,
+		#fdfdfd,
+		#dff5f3
+	);
+    border: 1px solid #caedf7;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}

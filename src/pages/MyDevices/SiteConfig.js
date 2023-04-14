@@ -8,7 +8,7 @@ import meterImg from "../../images/devices/meter.png";
 const SiteConfig = () => {
 	return (
 		<div className="flex justify-center  gap-8 mt-4">
-			<div className="flex justify-between rounded-[5px] p-2 bg-[#F3FFFE] w-[140px] box-shadow6 border-style">
+			<div className="flex justify-between rounded-[5px] p-2 bg-[#F3FFFE] w-[140px] box-shadow6  ">
 				<div>
 					<img
 						src={capacityImg}
@@ -21,7 +21,7 @@ const SiteConfig = () => {
 					<span>5.00kWp</span>
 				</div>
 			</div>
-			<div className="flex  justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6 border-style">
+			<div className="flex  justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6  ">
 				<div>
 					<img src={unitImg} alt="" className="mix-blend-multiply" />
 				</div>
@@ -30,7 +30,7 @@ const SiteConfig = () => {
 					<span>1/2</span>
 				</div>
 			</div>
-			<div className="flex  justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6 border-style">
+			<div className="flex  justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6  ">
 				<div>
 					<img
 						src={inverterImg}
@@ -43,7 +43,7 @@ const SiteConfig = () => {
 					<span>1/1</span>
 				</div>
 			</div>
-			<div className="flex justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6 border-style">
+			<div className="flex justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6  ">
 				<div>
 					<img src={meterImg} alt="" className="mix-blend-multiply" />
 				</div>
@@ -52,7 +52,7 @@ const SiteConfig = () => {
 					<span>1/1</span>
 				</div>
 			</div>
-			<div className="flex justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6 border-style">
+			<div className="flex justify-between rounded-[5px] p-2 bg-[#F3FFFE]  w-[140px] box-shadow6  ">
 				<div>
 					<img src={co2Img} alt="" className="mix-blend-multiply" />
 				</div>

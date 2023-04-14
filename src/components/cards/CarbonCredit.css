@@ -1,0 +1,25 @@
+.carbon-credit-upper-part{
+    background: linear-gradient(0deg, #bdf1ec 0%, #e7faf8 68%);
+}
+.carbon-credit-lower-part{
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+.rect1{
+  background-color: #c1d9f8;
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  left: 56%;
+  top: -10%;
+}
+.rect2{
+  background-color: #c1d9f8;
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  left: 56%;
+  bottom: -10%;
+}

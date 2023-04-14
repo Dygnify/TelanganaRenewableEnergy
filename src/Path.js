@@ -7,6 +7,7 @@ import Profile from "./pages/Profile/Profile";
 import Search from "./pages/Search/Search";
 import SignIn from "./pages/Sign In/SignIn";
 import MyDevices from "./pages/MyDevices/MyDevices";
+import Projects from "./pages/Projects/Projects";
 
 const Paths = () => {
 	return (
@@ -17,6 +18,7 @@ const Paths = () => {
 					<Route path="home" element={<LandingPage />} />
 					<Route path="search" element={<Search />} />
 					<Route path="analytic" element={<Analytic />} />
+					<Route path="projects" element={<Projects />} />
 					<Route path="myDevices" element={<MyDevices />} />
 					<Route path="profile" element={<Profile />} />
 					<Route path="signIn" element={<SignIn />} />
