@@ -1,12 +1,17 @@
 .carbon-credit-bg{
-    background: linear-gradient(0deg, #bdf1ec 0%, #e7faf8 68%);
+    background: linear-gradient(90deg, #bdf1ec 0%, #e7faf8 68%);
 }
 .carbon-credit-button{
   border: 2px solid #0dacac;
   color: #0dacac;
-  font-weight: 600;
-  background-image: linear-gradient(90deg, #bdf1ec 0%, #e7faf8 68%);
+  font-size: 17px;
+  font-weight: 700;
+  background-image: linear-gradient(90deg, #b4f7f0 0%, #dff7f4b9 68%);
 }
 .carbon-credit-button:hover{
-  background-image: linear-gradient(90deg, #e7faf8 0%, #bdf1ec 68%);
+  background-image: linear-gradient(90deg, #dff7f4b9 0%, #b4f7f0 68%);
+}
+.carbon-border-style{
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
