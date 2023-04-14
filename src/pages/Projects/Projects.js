@@ -15,12 +15,8 @@ const Projects = () => {
 			details: "The Demo Information",
 		},
 		{
-			title: "Project Files",
-			details: "No file available",
-		},
-		{
 			title: "Location",
-			details: "2-3 districts with boundary touching each other",
+			details: "Mulugu, Warangal, Mahabubabad, Bhadradri Kothagudem",
 		},
 		{
 			title: "Type",
@@ -39,15 +35,33 @@ const Projects = () => {
 		[
 			{
 				title: "Serial Number",
-				details: "0001-005005-005099-UCR-CoU-IN-008-01012018-31122018",
+				details: "0001-005005-005099-DYG-CC-IN-008-01012018-31122018",
+			},
+			{
+				title: "Vintage Year",
+				details: "2020",
+			},
+			{
+				title: "Carbon Credit Available",
+				details: "1585",
+			},
+			{
+				title: "Status",
+				details: "Registered (Others)",
+			},
+		],
+		[
+			{
+				title: "Serial Number",
+				details: "0001-005005-005099-DYG-CC-IN-008-01012018-31122018",
 			},
 			{
 				title: "Vintage Year",
 				details: "2021",
 			},
 			{
-				title: "CoU's Available",
-				details: "85",
+				title: "Carbon Credit Available",
+				details: "1806",
 			},
 			{
 				title: "Status",
@@ -57,93 +71,22 @@ const Projects = () => {
 		[
 			{
 				title: "Serial Number",
-				details: "0001-005005-005099-UCR-CoU-IN-008-01012018-31122018",
+				details: "0001-005005-005099-DYG-CC-IN-008-01012018-31122018",
 			},
 			{
 				title: "Vintage Year",
 				details: "2022",
 			},
 			{
-				title: "CoU's Available",
-				details: "105",
+				title: "Carbon Credit Available",
+				details: "2014",
 			},
 			{
 				title: "Status",
 				details: "Registered (Others)",
 			},
 		],
-		[
-			{
-				title: "Serial Number",
-				details: "0001-005005-005099-UCR-CoU-IN-008-01012018-31122018",
-			},
-			{
-				title: "Vintage Year",
-				details: "2023",
-			},
-			{
-				title: "CoU's Available",
-				details: "98",
-			},
-			{
-				title: "Status",
-				details: "Registered (Others)",
-			},
-		],
-		[
-			{
-				title: "Serial Number",
-				details: "0001-005005-005099-UCR-CoU-IN-008-01012018-31122018",
-			},
-			{
-				title: "Vintage Year",
-				details: "2024",
-			},
-			{
-				title: "CoU's Available",
-				details: "134",
-			},
-			{
-				title: "Status",
-				details: "Registered (Others)",
-			},
-		],
-		[
-			{
-				title: "Serial Number",
-				details: "0001-005005-005099-UCR-CoU-IN-008-01012018-31122018",
-			},
-			{
-				title: "Vintage Year",
-				details: "2025",
-			},
-			{
-				title: "CoU's Available",
-				details: "75",
-			},
-			{
-				title: "Status",
-				details: "Registered (Others)",
-			},
-		],
-		[
-			{
-				title: "Serial Number",
-				details: "0001-005005-005099-UCR-CoU-IN-008-01012018-31122018",
-			},
-			{
-				title: "Vintage Year",
-				details: "2026",
-			},
-			{
-				title: "CoU's Available",
-				details: "110",
-			},
-			{
-				title: "Status",
-				details: "Registered (Others)",
-			},
-		],
+		
 	];
 	return (
 		<div>
@@ -202,8 +145,8 @@ const Projects = () => {
 				))}
 			</div>
 			<div className="px-3 py-2 flex justify-between items-center bg-slate-700 text-slate-50 text-[18px] rounded-md">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				<p className="font-bold">190,405</p>
+				<p>Total serialized carbon credit for this project that have been registred.</p>
+				<p className="font-bold">5,405</p>
 			</div>
 			<br />
 			<CarbonCredit />

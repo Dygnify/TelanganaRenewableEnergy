@@ -7,7 +7,7 @@ import ConvertCarbonCredit from "./ConvertCarbonCredit";
 import CreditConversionMsg from "./CreditConversionMsg";
 
 const CarbonCredit = () => {
-	const [carbonCredit, setCarbonCredit] = useState(5000);
+	const [carbonCredit, setCarbonCredit] = useState(5405);
 	const [isConvertCarbonCredit, setIsConvertCarbonCredit] = useState(false);
 	const [isCreditConversionMsg, setIsCreditConversionMsg] = useState(false);
 	return (
@@ -22,15 +22,15 @@ const CarbonCredit = () => {
 								className="mix-blend-multiply w-full h-full rounded-md hover:scale-[1.25] transition ease-in-out duration-1000"
 							/>
 						</div>
-						<div className=" font-semibold text-xl text-font-semibold text-slate-500 drop-shadow-lg">
+						<div className=" text-xl text-slate-500 drop-shadow-lg">
 							<p className="text-[#0dacac] text-[28px] font-bold flex justify-center">
 								{carbonCredit} (~
-								{carbonCredit * 40}
+								{carbonCredit * 88}
 								<div className="">
 									<img
 										src={rupeeIcon}
 										alt=""
-										className=" w-5 h-5 ml-[1px] -mt-1 "
+										className=" w-6 h-6 ml-[1px] mt-1 "
 									/>
 								</div>
 								)
