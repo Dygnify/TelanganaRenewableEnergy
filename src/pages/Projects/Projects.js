@@ -82,103 +82,150 @@ const Projects = () => {
 				</div>
 			</div>
 			<br />
-			<div className="bg-[#eefdfb] grid grid-cols-3 gap-4 p-4">
-				<div className="projects-card box-shadow5 flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5 flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
-				<div className="projects-card box-shadow5  flex flex-col justify-center  items-center rounded-lg h-[100px]">
-					<p className="font-bold text-slate-600">
-						Project Description
-					</p>
-					<p className="text-[18px] text-slate-500">
-						The Demo Information
-					</p>
-				</div>
+			<div className="bg-[#eefdfb] p-4 border border-[#caedf7] rounded-lg">
+				<section className="grid grid-cols-3 gap-4 mt-6">
+					<div className=" flex flex-col justify-center  rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className="  flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+				</section>
+				<div className="divider "></div>
+				<section className="grid grid-cols-3 gap-4 mt-6">
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className="  flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+				</section>
+				<div className="divider"></div>
+				<section className="grid grid-cols-3 gap-4 mt-6">
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className="  flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+				</section>
+				<div className="divider"></div>
+				<section className="grid grid-cols-3 gap-4 mt-6">
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className="  flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+					<div className=" flex flex-col justify-center   rounded-lg ">
+						<p className="font-bold text-slate-600">
+							Project Description
+						</p>
+						<p className="text-[18px] text-slate-500">
+							The Demo Information
+						</p>
+					</div>
+				</section>
+			</div>
+			<div className="px-3 py-2 flex justify-between items-center bg-slate-700 text-slate-50 text-[18px] rounded-md">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<p>190,405</p>
 			</div>
 			<br />
 			<CarbonCredit />
