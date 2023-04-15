@@ -24,16 +24,7 @@ const CarbonCredit = () => {
 						</div>
 						<div className=" text-xl text-slate-500 drop-shadow-lg">
 							<p className="text-[#0dacac] text-[28px] font-bold flex justify-center">
-								{carbonCredit} (~
-								{carbonCredit * 88}
-								<div className="">
-									<img
-										src={rupeeIcon}
-										alt=""
-										className=" w-6 h-6 ml-[1px] mt-1 "
-									/>
-								</div>
-								)
+								{carbonCredit}
 							</p>
 						</div>
 					</div>

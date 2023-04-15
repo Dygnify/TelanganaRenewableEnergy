@@ -45,7 +45,7 @@ const ConvertCarbonCredit = ({
 				</div>
 				<div className="mt-4">
 					<h2 className=" text-[1.4375rem] lg:text-[1.8rem] font-semibold text-slate-500  drop-shadow-lg px-2 text-center">
-						Convert your Carbon Credits in NFT
+						Tokenize your Carbon Credits
 					</h2>
 					<p className="mt-8  w-1/2 mx-auto text-slate-500 flex items-center flex-col">
 						<span>Current available carbon credits:</span>
@@ -76,7 +76,7 @@ const ConvertCarbonCredit = ({
 								type="number"
 								name="number"
 								value={!temp ? "" : temp}
-								placeholder="Enter the carbon credits number"
+								placeholder="Enter the number of carbon credits"
 								className="outline-none  w-full appearance-none rounded-lg text-slate-500 "
 							/>
 						</div>

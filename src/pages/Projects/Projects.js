@@ -12,7 +12,7 @@ const Projects = () => {
 		},
 		{
 			title: "Project Category",
-			details: "The Demo Information",
+			details: "Renewable Energy",
 		},
 		{
 			title: "Location",
@@ -20,7 +20,7 @@ const Projects = () => {
 		},
 		{
 			title: "Type",
-			details: "Renewable Energy (Solar)",
+			details: "Solar Pumps",
 		},
 		{
 			title: "Authorized Project Contact",
