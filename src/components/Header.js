@@ -44,6 +44,12 @@ const Header = () => {
 				>
 					<li>Projects</li>
 				</NavLink>
+				<NavLink
+					to="/greenScore"
+					className={({ isActive }) => (isActive ? "active" : "")}
+				>
+					<li>Green Score</li>
+				</NavLink>
 			
 
 				{!user ? (

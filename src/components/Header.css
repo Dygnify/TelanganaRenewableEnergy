@@ -1,33 +1,52 @@
-.header-nav ul li {
+.header-nav ul li,
+.subHeader-nav ul li {
 	text-decoration: none;
-	color: #6B7A8F;
 	font-weight: 700;
 	padding: 2px 1.2rem;
 	position: relative;
 }
+.subHeader-nav ul li{
+	font-weight: 500;
+}
+.header-nav ul li{
+	color: #6b7a8f;
+}
 
-.header-nav .active:hover{
-    animation: pulse 2s 1;
+.header-nav .active:hover {
+	animation: pulse 2s 1;
 }
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(196, 120, 226, 0.7);
-    }
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(196, 120, 226, 0.7);
+	}
 
-    50% {
-        transform: scale(1.4);
-        box-shadow: 0 0 0 10px rgba(171, 52, 240, 0.11);
-    }
+	50% {
+		transform: scale(1.4);
+		box-shadow: 0 0 0 10px rgba(171, 52, 240, 0.11);
+	}
 
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
-.header-nav .active{
-    background-color: #7f10fe15;
-    border: 2px solid #8110FE;
-    border-radius: 100px;
+.header-nav .active {
+	background-color: #7f10fe15;
+	border: 2px solid #8110fe;
+	border-radius: 100px;
 }
-
+.subHeader-nav .inactive{
+	color: rgb(175, 174, 174);
+	border-bottom: 2px solid rgb(199, 199, 199);
+}
+.subHeader-nav .inactive:hover{
+	background-color: rgba(206, 205, 205, 0.185);
+}
+.subHeader-nav .active{
+	color: #7c7cfc;
+	border-bottom: 2px solid #7c7cfc;
+}
+.subHeader-nav .active:hover{
+	background-color: #7c7cfc25;
+}
