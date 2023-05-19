@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MyGaugeChart from "../../components/charts/MyGaugeChart";
 import GreenDashboard from "./GreenDashboard";
 import { Outlet } from "react-router-dom";
@@ -10,6 +10,10 @@ const demoInfo = [
 	{ text: "Financial repayments of Solar Equipment Loans" },
 ];
 const GreenScore = () => {
+	const [finalScore, setFinalScore] = useState(0);
+	// useEffect(()=>{
+	// 	console.log('final score: ', finalScore);
+	// },[finalScore])
 	return (
 		<div>
 			<div className="mt-4 box-shadow4 gradient-right border border-[#ccc2ff8f] w-4/5 mx-auto flex flex-col rounded-md p-4">
@@ -26,7 +30,7 @@ const GreenScore = () => {
 				</div>
 				<div className="flex justify-around  gap-4 mt-1">
 					<div className="w-[50%]  flex justify-center p-[2px] border border-[#ccc2ffe5]  rounded-lg  hover:scale-[1.06] transition ease-in-out duration-700 box-shadow5 bg-[#f7f7f8]">
-						<MyGaugeChart />
+						<MyGaugeChart totalScore={finalScore} />
 					</div>
 					<div className="w-[50%]  flex flex-col gap-y-2">
 						{demoInfo.map((item, i) => (
@@ -53,7 +57,7 @@ const GreenScore = () => {
 			<div className="w-4/5 mx-auto mt-6 min-h-screen border border-[#ccc2ff8f] rounded-md">
 				<GreenDashboard />
 				<div className="mt-2 text-slate-800">
-					<Outlet />
+					<Outlet context={{ setFinalScore }} />
 				</div>
 			</div>
 		</div>

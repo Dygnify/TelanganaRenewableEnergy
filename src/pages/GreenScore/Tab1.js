@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import MyGaugeChart from "../../components/charts/MyGaugeChart";
 import "./GreenScore.css";
 import ConfigureTable from "./ConfigureTable";
+import { useOutletContext } from "react-router-dom";
 
 const demoInfo = [
 	{ text: "Number of solar utilities used" },
@@ -11,28 +12,28 @@ const demoInfo = [
 ];
 const tableData = [
 	{
-		id:1,
+		id: 1,
 		parameter: "Some text info1",
 		value: 200,
 		weightage: 0,
 		score: 0,
 	},
 	{
-		id:2,
+		id: 2,
 		parameter: "Some text info1",
 		value: 200,
 		weightage: 0,
 		score: 0,
 	},
 	{
-		id:3,
+		id: 3,
 		parameter: "Some text info1",
 		value: 200,
 		weightage: 0,
 		score: 0,
 	},
 	{
-		id:4,
+		id: 4,
 		parameter: "Some text info1",
 		value: 200,
 		weightage: 0,
@@ -40,6 +41,8 @@ const tableData = [
 	},
 ];
 const Tab1 = () => {
+	const [totalScore, setTotalScore] = useState(0); 
+	const { setFinalScore } = useOutletContext();
 	return (
 		<div>
 			<div className="mx-auto flex flex-col rounded-md">
@@ -72,11 +75,15 @@ const Tab1 = () => {
 						))}
 					</div>
 					<div className="w-[40%]  flex justify-center p-[2px]  rounded-lg  hover:scale-[1.06] transition ease-in-out duration-700 box-shadow4 bg-[#fffffe]">
-						<MyGaugeChart />
+						<MyGaugeChart totalScore={totalScore} />
 					</div>
 				</div>
 			</div>
-			<ConfigureTable tableData={tableData} />
+			<ConfigureTable
+				tableData={tableData}
+				setTotalScore={setTotalScore}
+				setFinalScore={setFinalScore}
+			/>
 		</div>
 	);
 };

@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./RangeSlider.css";
 
-const RangeSlider = ({ rangeValue,setRangeValue, id }) => {
+const RangeSlider = ({ id,rangeValue, onChange }) => {
 	const [value, setValue] = useState(rangeValue);
 
 	const handleChange = (event) => {
 		const newValue = parseInt(event.target.value, 10);
 		setValue(newValue);
-		setRangeValue(newValue);
+		if (typeof onChange === "function") {
+			onChange(id, newValue);
+		}
 		console.log('id: ', id, " value: ", value);
 
 		const sliderEl = document.querySelector(`.range-input${id}`);
