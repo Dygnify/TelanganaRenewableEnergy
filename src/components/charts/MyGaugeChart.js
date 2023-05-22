@@ -2,21 +2,21 @@ import { Doughnut } from "react-chartjs-2";
 import { Chart, ArcElement } from "chart.js";
 import { useEffect, useState } from "react";
 
+// it returns the speed <= 900.
 function getSpeed(speed) {
-	if (isNaN(speed)) return 0;
-	if (speed === 0) return speed;
-
-	if (speed > 100) return 30;
-	if (speed > 50) return 20;
-	return 10;
+	return Math.min(100, Math.ceil((speed * 100) / 900));
 }
 
 const MyGaugeChart = ({ totalScore }) => {
 	const [speed, setSpeed] = useState(0);
+
 	useEffect(() => {
-		setSpeed(totalScore % 100);
+		// setSpeed(totalScore%100);
+		setSpeed(getSpeed(totalScore));
 	}, [totalScore]);
+
 	Chart.register(ArcElement);
+
 	const chartData = {
 		datasets: [
 			{
@@ -112,7 +112,7 @@ const MyGaugeChart = ({ totalScore }) => {
 			ctx.fillStyle = "black";
 			ctx.font = `bolder 1.5em roboto`;
 			ctx.textAlign = "center";
-			ctx.fillText(totalScore%(901), centerX, centerY + 10);
+			ctx.fillText(totalScore % 901, centerX, centerY + 10);
 		},
 	};
 

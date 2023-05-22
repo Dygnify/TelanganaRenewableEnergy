@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MyGaugeChart from "../../components/charts/MyGaugeChart";
 import "./GreenScore.css";
 import ConfigureTable from "./ConfigureTable";
@@ -40,9 +40,18 @@ const tableData = [
 		score: 0,
 	},
 ];
+
 const Tab1 = () => {
-	const [totalScore, setTotalScore] = useState(0); 
+	const [totalScore, setTotalScore] = useState(
+		tableData.reduce(
+			(accumulator, currentValue) => accumulator + currentValue.score,
+			0
+		)
+	);
 	const { setFinalScore } = useOutletContext();
+	useEffect(() => {
+		console.log("total score: ", totalScore);
+	}, [totalScore]);
 	return (
 		<div>
 			<div className="mx-auto flex flex-col rounded-md">
@@ -54,7 +63,7 @@ const Tab1 = () => {
 						Scoreboard
 					</p>
 				</div>
-				<div className="flex justify-around  gap-4 mt-1">
+				<div className="flex justify-around  gap-4 mt-1 mb-3">
 					<div className="w-[40%]  flex flex-col gap-y-2">
 						{demoInfo.map((item, i) => (
 							<div
@@ -74,7 +83,7 @@ const Tab1 = () => {
 							</div>
 						))}
 					</div>
-					<div className="w-[40%]  flex justify-center p-[2px]  rounded-lg  hover:scale-[1.06] transition ease-in-out duration-700 box-shadow4 bg-[#fffffe]">
+					<div className="w-[40%] h-full  flex justify-center p-[2px]  rounded-lg  hover:scale-[1.06] transition ease-in-out duration-700 box-shadow4 bg-[#fffffe]">
 						<MyGaugeChart totalScore={totalScore} />
 					</div>
 				</div>
@@ -83,6 +92,7 @@ const Tab1 = () => {
 				tableData={tableData}
 				setTotalScore={setTotalScore}
 				setFinalScore={setFinalScore}
+				tab={"tab1"}
 			/>
 		</div>
 	);
