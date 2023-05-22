@@ -13,7 +13,7 @@ const GreenDashboard = () => {
 						isActive ? "active" : "inactive"
 					}
 				>
-					<li>Tab1</li>
+					<li>SDG Goals</li>
 				</NavLink>
 
 				<NavLink
@@ -22,7 +22,7 @@ const GreenDashboard = () => {
 						isActive ? "active" : "inactive"
 					}
 				>
-					<li>Tab2</li>
+					<li>Governance</li>
 				</NavLink>
 				<NavLink
 					to="/greenScore/tab3"
@@ -30,7 +30,23 @@ const GreenDashboard = () => {
 						isActive ? "active" : "inactive"
 					}
 				>
-					<li>Tab3</li>
+					<li>Climate Risk</li>
+				</NavLink>
+				<NavLink
+					to="/greenScore/tab4"
+					className={({ isActive }) =>
+						isActive ? "active" : "inactive"
+					}
+				>
+					<li>Policy Risk</li>
+				</NavLink>
+				<NavLink
+					to="/greenScore/tab5"
+					className={({ isActive }) =>
+						isActive ? "active" : "inactive"
+					}
+				>
+					<li>Credit Risk</li>
 				</NavLink>
 			</ul>
 		</nav>

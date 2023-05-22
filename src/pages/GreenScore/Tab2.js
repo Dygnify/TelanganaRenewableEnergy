@@ -11,34 +11,35 @@ const demoInfo = [
 	{ text: "Financial repayments of Solar Equipment Loans" },
 	{ text: "Financial repayments" },
 ];
+const weitage = 0.2;
 const tableData = [
 	{
 		id: 1,
-		parameter: "Some text info1",
-		value: 200,
-		weightage: 0,
-		score: 0,
+		parameter: "Relevant environment related certifications/licences",
+		value: 700,
+		weightage: 25,
+		score: 35,
 	},
 	{
 		id: 2,
-		parameter: "Some text info1",
-		value: 200,
-		weightage: 0,
-		score: 0,
+		parameter: "Regulatory complianced adherence",
+		value: 500,
+		weightage: 25,
+		score: 25,
 	},
 	{
 		id: 3,
-		parameter: "Some text info1",
-		value: 200,
-		weightage: 0,
-		score: 0,
+		parameter: "Relevant green project execution experience (in Years)",
+		value: 432,
+		weightage: 25,
+		score: 21.6,
 	},
 	{
 		id: 4,
-		parameter: "Some text info1",
-		value: 200,
-		weightage: 0,
-		score: 0,
+		parameter: "Performance of previous projects",
+		value: 500,
+		weightage: 25,
+		score: 25,
 	},
 ];
 const Tab2 = () => {
@@ -90,6 +91,7 @@ const Tab2 = () => {
 				setTotalScore={setTotalScore}
 				setFinalScore={setFinalScore}
 				tab={"tab2"}
+				weitage={weitage}
 			/>
 		</div>
 	);
