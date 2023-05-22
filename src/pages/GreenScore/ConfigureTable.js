@@ -89,7 +89,7 @@ const ConfigureTable = ({ tableData, setTotalScore, setFinalScore, tab, weitage}
 															data.value) /
 													  100
 													: 0} */}
-													{data.score}
+													{(data.score).toFixed(2)}
 											</div>
 										</td>
 									</tr>
