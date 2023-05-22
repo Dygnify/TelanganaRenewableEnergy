@@ -12,6 +12,8 @@ import GreenScore from "./pages/GreenScore/GreenScore";
 import Tab1 from "./pages/GreenScore/Tab1";
 import Tab2 from "./pages/GreenScore/Tab2";
 import Tab3 from "./pages/GreenScore/Tab3";
+import Tab4 from "./pages/GreenScore/Tab4";
+import Tab5 from "./pages/GreenScore/Tab5";
 
 const Paths = () => {
 	return (
@@ -27,6 +29,8 @@ const Paths = () => {
 						<Route path="tab1" element={<Tab1 />} />
 						<Route path="tab2" element={<Tab2 />} />
 						<Route path="tab3" element={<Tab3 />} />
+						<Route path="tab4" element={<Tab4 />} />
+						<Route path="tab5" element={<Tab5 />} />
 					</Route>
 					<Route path="projects" element={<Projects />} />
 					<Route path="myDevices" element={<MyDevices />} />

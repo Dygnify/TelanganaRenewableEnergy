@@ -13,62 +13,27 @@ const weitage = 0.2;
 const tableData = [
 	{
 		id: 1,
-		parameter: "Earthquake",
-		value: 0,
-		weightage: 0,
-		score: 0,
+		parameter: "PM Kusum yojana outlay increased",
+		value: 900,
+		weightage: 25,
+		score: 45,
 	},
 	{
 		id: 2,
-		parameter: "Drought",
-		value: 84,
-		weightage: 50,
-		score: 8.4,
+		parameter: "Government provides tax credits to offset a portion of the installation costs for solar panels.",
+		value: 900,
+		weightage: 25,
+		score: 45,
 	},
 	{
 		id: 3,
-		parameter: "Floods",
-		value: 0,
-		weightage: 0,
-		score: 0,
-	},
-	{
-		id: 4,
-		parameter: "Forest Fire",
-		value: 0,
-		weightage: 0,
-		score: 0,
-	},
-	{
-		id: 5,
-		parameter: "Cyclones",
-		value: 0,
-		weightage: 0,
-		score: 0,
-	},
-	{
-		id: 6,
-		parameter: "Landslide",
-		value: 0,
-		weightage: 0,
-		score: 0,
-	},
-	{
-		id: 7,
-		parameter: "Heat wave",
-		value: 480,
+		parameter: "Are there any legal structure related risks that can de-rail the project?",
+		value: 900,
 		weightage: 50,
-		score: 48,
-	},
-	{
-		id: 8,
-		parameter: "Unseasonal/heavy rains",
-		value: 0,
-		weightage: 0,
-		score: 0,
+		score: 90,
 	},
 ];
-const Tab3 = () => {
+const Tab4 = () => {
 	const [totalScore, setTotalScore] = useState(
 		tableData.reduce(
 			(accumulator, currentValue) => accumulator + currentValue.score,
@@ -116,11 +81,11 @@ const Tab3 = () => {
 				tableData={tableData}
 				setTotalScore={setTotalScore}
 				setFinalScore={setFinalScore}
-				tab={"tab3"}
+				tab={"tab4"}
 				weitage={weitage}
 			/>
 		</div>
 	);
 };
 
-export default Tab3;
+export default Tab4;

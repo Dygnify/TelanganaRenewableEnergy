@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RangeSlider from "../../components/RangeSlider/RangeSlider";
 
-const ConfigureTable = ({ tableData, setTotalScore, setFinalScore, tab}) => {
+const ConfigureTable = ({ tableData, setTotalScore, setFinalScore, tab, weitage}) => {
 	const [rangeValue, setRangeValue] = useState({});
 	const handleSliderChange = (id, newValue) => {
 
@@ -12,7 +12,7 @@ const ConfigureTable = ({ tableData, setTotalScore, setFinalScore, tab}) => {
 			if(tableData[i].id === id){
 				tableData[i].weightage = newValue;
 				tableData[i].score =
-					(tableData[i].value * tableData[i].weightage) / 100;
+					(tableData[i].value * tableData[i].weightage * weitage) / 100;
 			}
 			currentTotalScore+=tableData[i].score;
 		}
@@ -89,7 +89,7 @@ const ConfigureTable = ({ tableData, setTotalScore, setFinalScore, tab}) => {
 															data.value) /
 													  100
 													: 0} */}
-													{data.score}
+													{(data.score).toFixed(2)}
 											</div>
 										</td>
 									</tr>
