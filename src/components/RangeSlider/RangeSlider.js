@@ -6,11 +6,15 @@ const RangeSlider = ({ id, rangeValue, onChange }) => {
 
 	useEffect(() => {
 		const sliderEl = document.querySelector(`.range-input${id}`);
+		const rangeV = document.getElementById(`rangeV${id}`);
 
 		const progress = (rangeValue / sliderEl.max) * 100;
 
 		sliderEl.style.background = `linear-gradient(to right, #f50 ${progress}%, #ccc ${progress}%)`;
-	}, [id, rangeValue]);
+		const newPosition = 10 - value * 0.2;
+		rangeV.innerHTML = `<span>${value}%</span>`;
+		rangeV.style.left = `calc(${value}% + (${newPosition}px))`;
+	}, [id, rangeValue, value]);
 
 	const handleChange = (event) => {
 		const newValue = parseInt(event.target.value, 10);
@@ -18,16 +22,11 @@ const RangeSlider = ({ id, rangeValue, onChange }) => {
 		if (typeof onChange === "function") {
 			onChange(id, newValue);
 		}
-
-		const sliderEl = document.querySelector(`.range-input${id}`);
-
-		const progress = (newValue / sliderEl.max) * 100;
-
-		sliderEl.style.background = `linear-gradient(to right, #f50 ${progress}%, #ccc ${progress}%)`;
 	};
 
 	return (
-		<div className="range-slider">
+		<div className="range-slider relative">
+			<div class="range-value" id={`rangeV${id}`}></div>
 			<input
 				className={`range-input${id}`}
 				type="range"

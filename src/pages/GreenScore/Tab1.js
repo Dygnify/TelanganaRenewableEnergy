@@ -3,6 +3,7 @@ import MyGaugeChart from "../../components/charts/MyGaugeChart";
 import "./GreenScore.css";
 import ConfigureTable from "./ConfigureTable";
 import { useOutletContext } from "react-router-dom";
+import Loader from "../../components/Loader/Loader";
 
 const demoInfo = [
 	{ text: "Number of solar utilities used" },
@@ -48,10 +49,27 @@ const Tab1 = () => {
 			0
 		)
 	);
+	const [isLoader, setIsLoader] = useState(false);
 	const { setFinalScore } = useOutletContext();
 	useEffect(() => {
 		console.log("total score: ", totalScore);
 	}, [totalScore]);
+
+	// delay function
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		setIsLoader(true);
+	// 	}, 1000);
+	// }, [finalScore]);
+
+	// show loader upto 2 seconds.
+	// useEffect(() => {
+	// 	if (isLoader) {
+	// 		setTimeout(() => {
+	// 			setIsLoader(false);
+	// 		}, 2000);
+	// 	}
+	// }, [isLoader]);
 	return (
 		<div>
 			<div className="mx-auto flex flex-col rounded-md">
@@ -83,8 +101,15 @@ const Tab1 = () => {
 							</div>
 						))}
 					</div>
-					<div className="w-[40%] h-full  flex justify-center p-[2px]  rounded-lg  hover:scale-[1.06] transition ease-in-out duration-700 box-shadow4 bg-[#fffffe]">
-						<MyGaugeChart totalScore={totalScore} />
+					<div className="relative w-[40%]">
+						<div
+							className={`${
+								isLoader && "blur-md"
+							}  h-full  flex justify-center p-[2px]  rounded-lg  hover:scale-[1.06] transition ease-in-out duration-700 box-shadow4 bg-[#fffffe]`}
+						>
+							<MyGaugeChart totalScore={totalScore} />
+						</div>
+						{/* {isLoader && <Loader />} */}
 					</div>
 				</div>
 			</div>

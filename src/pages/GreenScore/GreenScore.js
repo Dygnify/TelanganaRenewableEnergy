@@ -12,29 +12,9 @@ const demoInfo = [
 ];
 const GreenScore = () => {
 	const [finalScore, setFinalScore] = useState({});
-	const [isLoader, setIsLoader] = useState(true);
-
-	// delay function
-	// useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setIsLoader(true);
-	// 	}, 1000);
-	// }, [finalScore]);
-
-	// show loader upto 2 seconds.
-	// useEffect(() => {
-	// 	if (isLoader) {
-	// 		setTimeout(() => {
-	// 			setIsLoader(false);
-	// 		}, 2000);
-	// 	}
-	// }, [isLoader]);
 
 	return (
 		<div>
-			{/* <div className={`${isLoader && "blur-bg"}`}>
-				{isLoader && <Loader />}
-			</div> */}
 			<div>
 				<div className="mt-4 box-shadow4 gradient-right border border-[#ccc2ff8f] w-4/5 mx-auto flex flex-col rounded-md p-4">
 					<h2 className="text-center text-[1.6375rem] font-semibold text-[#93a2f8]  px-2 drop-shadow-md">
