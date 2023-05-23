@@ -1,15 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RangeSlider from "../../components/RangeSlider/RangeSlider";
 
 const ConfigureTable = ({ tableData, setTotalScore, setFinalScore, tab}) => {
 	const [rangeValue, setRangeValue] = useState({});
+	useEffect(()=>{
+		let currentTotalScore = 0;
+		const len = tableData.length;
+		for(let i=0; i<len; i++){
+			currentTotalScore += tableData[i].score;
+		}
+		
+		setFinalScore((prevValues) => ({
+			...prevValues,
+			[tab]:currentTotalScore,
+		}));
+	},[]);
+
 	const handleSliderChange = (id, newValue) => {
 		let changedSlider =  tableData.find(o => o.id === id);
 		let oldWeightage = changedSlider.weightage;
 		const len = tableData.length;
 		let currentTotalScore = 0;
+		if(newValue === 100) --newValue;
+		if(newValue === 0) ++newValue;
 		for(let i=0; i<len; i++){
-			if(tableData[i].id === id){
+			if(tableData[i].id === id) { 
 				tableData[i].weightage = newValue;
 			} else {
 				tableData[i].weightage = (tableData[i].weightage*(100 - newValue)/(100 - oldWeightage)).toFixed(2);  
