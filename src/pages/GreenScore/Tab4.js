@@ -5,32 +5,30 @@ import ConfigureTable from "./ConfigureTable";
 import { useOutletContext } from "react-router-dom";
 
 const demoInfo = [
-	{ text: "Number of solar utilities used" },
-	{ text: "Total Solar Energy Produced by equipments" },
-	{ text: "Contribution of Unused Energy to Peers" },
+	{ text: "The project is set to benefit from the recent increase in budget allocation for Scheme encouraging solar power projects." },
+	{ text: "Government's decision to provide tax benefits will reduce the overall effective expenses and provide impetus to the industry." },
 ];
-const weitage = 0.2;
 const tableData = [
 	{
 		id: 1,
 		parameter: "PM Kusum yojana outlay increased",
 		value: 900,
 		weightage: 25,
-		score: 45,
+		score: 225,
 	},
 	{
 		id: 2,
 		parameter: "Government provides tax credits to offset a portion of the installation costs for solar panels.",
 		value: 900,
 		weightage: 25,
-		score: 45,
+		score: 225,
 	},
 	{
 		id: 3,
 		parameter: "Are there any legal structure related risks that can de-rail the project?",
 		value: 900,
 		weightage: 50,
-		score: 90,
+		score: 450,
 	},
 ];
 const Tab4 = () => {
@@ -82,7 +80,6 @@ const Tab4 = () => {
 				setTotalScore={setTotalScore}
 				setFinalScore={setFinalScore}
 				tab={"tab4"}
-				weitage={weitage}
 			/>
 		</div>
 	);

@@ -5,41 +5,38 @@ import ConfigureTable from "./ConfigureTable";
 import { useOutletContext } from "react-router-dom";
 
 const demoInfo = [
-	{ text: "Number of solar utilities used" },
-	{ text: "Total Solar Energy Produced by equipments" },
-	{ text: "Contribution of Unused Energy to Peers" },
-	{ text: "Financial repayments of Solar Equipment Loans" },
-	{ text: "Financial repayments" },
+	{ text: "The developer has all the mandatory licenses for developing the project." },
+	{ text: "The developer has applied for a quality assurance certificate but is yet to receive it." },
+	{ text: "The developer has average experience in executing projects of similar size but in a different region." }
 ];
-const weitage = 0.2;
 const tableData = [
 	{
 		id: 1,
 		parameter: "Relevant environment related certifications/licences",
 		value: 700,
 		weightage: 25,
-		score: 35,
+		score: 175,
 	},
 	{
 		id: 2,
 		parameter: "Regulatory complianced adherence",
 		value: 500,
 		weightage: 25,
-		score: 25,
+		score: 125,
 	},
 	{
 		id: 3,
 		parameter: "Relevant green project execution experience (in Years)",
 		value: 432,
 		weightage: 25,
-		score: 21.6,
+		score: 108,
 	},
 	{
 		id: 4,
 		parameter: "Performance of previous projects",
 		value: 500,
 		weightage: 25,
-		score: 25,
+		score: 125,
 	},
 ];
 const Tab2 = () => {
@@ -91,7 +88,6 @@ const Tab2 = () => {
 				setTotalScore={setTotalScore}
 				setFinalScore={setFinalScore}
 				tab={"tab2"}
-				weitage={weitage}
 			/>
 		</div>
 	);

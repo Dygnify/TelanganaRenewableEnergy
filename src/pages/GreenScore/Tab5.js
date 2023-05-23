@@ -5,32 +5,31 @@ import ConfigureTable from "./ConfigureTable";
 import { useOutletContext } from "react-router-dom";
 
 const demoInfo = [
-	{ text: "Number of solar utilities used" },
-	{ text: "Total Solar Energy Produced by equipments" },
-	{ text: "Contribution of Unused Energy to Peers" },
+	{ text: "The Project Developer has a good standing in the Industry." },
+	{ text: "The promoters have more than 3 years of experience in the line." },
+	{ text: "There is no negative news as per the alternative data check." },
 ];
-const weitage = 0.2;
 const tableData = [
 	{
 		id: 1,
 		parameter: "Business Risk score",
 		value: 706.8,
 		weightage: 40,
-		score: 56.54,
+		score: 282.72,
 	},
 	{
 		id: 2,
 		parameter: "Management Risk score",
 		value: 737,
 		weightage: 40,
-		score: 58.96,
+		score: 294.8,
 	},
 	{
 		id: 3,
 		parameter: "Alternative data score",
 		value: 675,
 		weightage: 20,
-		score: 27,
+		score: 135,
 	}
 ];
 const Tab5 = () => {
@@ -82,7 +81,6 @@ const Tab5 = () => {
 				setTotalScore={setTotalScore}
 				setFinalScore={setFinalScore}
 				tab={"tab5"}
-				weitage={weitage}
 			/>
 		</div>
 	);

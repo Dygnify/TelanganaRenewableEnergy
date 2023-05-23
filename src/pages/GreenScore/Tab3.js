@@ -5,11 +5,10 @@ import ConfigureTable from "./ConfigureTable";
 import { useOutletContext } from "react-router-dom";
 
 const demoInfo = [
-	{ text: "Number of solar utilities used" },
-	{ text: "Total Solar Energy Produced by equipments" },
-	{ text: "Contribution of Unused Energy to Peers" },
+	{ text: "The  region is vulnerable to Drought and Heatwaves." },
+	{ text: "As per IMD data the region was affected with moderate to severe drought for 7 out of the last 10 years." },
+	{ text: "As per IMD data  the region was affected with Heatwaves for 3 years out of the past 10 years" },
 ];
-const weitage = 0.2;
 const tableData = [
 	{
 		id: 1,
@@ -23,7 +22,7 @@ const tableData = [
 		parameter: "Drought",
 		value: 84,
 		weightage: 50,
-		score: 8.4,
+		score: 42,
 	},
 	{
 		id: 3,
@@ -58,7 +57,7 @@ const tableData = [
 		parameter: "Heat wave",
 		value: 480,
 		weightage: 50,
-		score: 48,
+		score: 240,
 	},
 	{
 		id: 8,
@@ -117,7 +116,6 @@ const Tab3 = () => {
 				setTotalScore={setTotalScore}
 				setFinalScore={setFinalScore}
 				tab={"tab3"}
-				weitage={weitage}
 			/>
 		</div>
 	);

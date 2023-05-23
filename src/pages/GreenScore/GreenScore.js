@@ -5,10 +5,11 @@ import { Outlet } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
 
 const demoInfo = [
-	{ text: "Number of solar utilities used" },
-	{ text: "Total Solar Energy Produced by equipments" },
-	{ text: "Contribution of Unused Energy to Peers" },
-	{ text: "Financial repayments of Solar Equipment Loans" },
+	{ text: "The Project is focused on meeting following SDG goals and has been successful in achieving 80% of its targeted CO2 emission reduction" },
+	{ text: "The developer has previously executed similar projects with a satisfactory performance" },
+	{ text: "The region is vulnerable to drought & heatwaves" },
+	{ text: "The recent policy events are expected to have a positive impact on the project" },
+	{ text: "The Project developers have a good standing in the Industry" },
 ];
 const GreenScore = () => {
 	const [finalScore, setFinalScore] = useState({});

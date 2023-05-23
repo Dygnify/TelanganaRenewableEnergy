@@ -11,7 +11,6 @@ const MyGaugeChart = ({ totalScore }) => {
 	const [speed, setSpeed] = useState(0);
 
 	useEffect(() => {
-		// setSpeed(totalScore%100);
 		setSpeed(getSpeed(totalScore));
 	}, [totalScore]);
 
@@ -112,7 +111,7 @@ const MyGaugeChart = ({ totalScore }) => {
 			ctx.fillStyle = "black";
 			ctx.font = `bolder 1.5em roboto`;
 			ctx.textAlign = "center";
-			ctx.fillText(totalScore % 901, centerX, centerY + 10);
+			ctx.fillText((totalScore % 901).toFixed(0), centerX, centerY + 10);
 		},
 	};
 

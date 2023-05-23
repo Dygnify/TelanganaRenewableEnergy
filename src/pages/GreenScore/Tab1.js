@@ -6,40 +6,17 @@ import { useOutletContext } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
 
 const demoInfo = [
-	{ text: "Number of solar utilities used" },
-	{ text: "Total Solar Energy Produced by equipments" },
-	{ text: "Contribution of Unused Energy to Peers" },
-	{ text: "Financial repayments of Solar Equipment Loans" },
+	{ text: "The Project has met 80% of its targeted emission reduction which is in line with projects of similar size in the region." },
+	{ text: "The development of the project focuses on two SDG goals. i.e  7 & 13" },
 ];
 const tableData = [
 	{
 		id: 1,
-		parameter: "Some text info1",
-		value: 200,
-		weightage: 0,
-		score: 0,
-	},
-	{
-		id: 2,
-		parameter: "Some text info1",
-		value: 200,
-		weightage: 0,
-		score: 0,
-	},
-	{
-		id: 3,
-		parameter: "Some text info1",
-		value: 200,
-		weightage: 0,
-		score: 0,
-	},
-	{
-		id: 4,
-		parameter: "Some text info1",
-		value: 200,
-		weightage: 0,
-		score: 0,
-	},
+		parameter: "Achievement of the targeted cumulative emission reduction ",
+		value: 720,
+		weightage: 100,
+		score: 720,
+	}
 ];
 
 const Tab1 = () => {
