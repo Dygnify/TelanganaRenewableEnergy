@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./RangeSlider.css";
 
 const RangeSlider = ({ id, rangeValue, onChange }) => {
-	const [value, setValue] = useState(rangeValue);
 
 	useEffect(() => {
 		const sliderEl = document.querySelector(`.range-input${id}`);
@@ -11,14 +10,14 @@ const RangeSlider = ({ id, rangeValue, onChange }) => {
 		const progress = (rangeValue / sliderEl.max) * 100;
 
 		sliderEl.style.background = `linear-gradient(to right, #f50 ${progress}%, #ccc ${progress}%)`;
-		const newPosition = 10 - value * 0.2;
-		rangeV.innerHTML = `<span>${value}%</span>`;
-		rangeV.style.left = `calc(${value}% + (${newPosition}px))`;
-	}, [id, rangeValue, value]);
+		const newValue = parseInt(rangeValue, 10); 
+		const newPosition = 10 - newValue * 0.2;
+		rangeV.innerHTML = `<span>${newValue}%</span>`;
+		rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+	}, [id, rangeValue]);
 
 	const handleChange = (event) => {
 		const newValue = parseInt(event.target.value, 10);
-		setValue(newValue);
 		if (typeof onChange === "function") {
 			onChange(id, newValue);
 		}
@@ -32,7 +31,7 @@ const RangeSlider = ({ id, rangeValue, onChange }) => {
 				type="range"
 				min="00"
 				max="100"
-				value={value}
+				value={rangeValue}
 				onChange={(e) => handleChange(e)}
 			/>
 		</div>
