@@ -69,20 +69,17 @@ const Tab1 = () => {
 							</div>
 						))}
 						<div className="flex justify-between">
-							<div className="">
-								<img
-									src={sdgImg1}
-									className="img-border hover:scale-[1.06] transition ease-in-out duration-500 w-[90%]"
-									alt=""
-								/>
-							</div>
-							<div className="flex justify-end">
-								<img
-									src={sdgImg2}
-									className="img-border hover:scale-[1.06] transition ease-in-out duration-500 w-[90%]"
-									alt=""
-								/>
-							</div>
+							<img
+								src={sdgImg1}
+								className="w-[20%] img-border hover:scale-[1.15] transition ease-in-out duration-500 "
+								alt=""
+							/>
+
+							<img
+								src={sdgImg2}
+								className="w-[20%] img-border hover:scale-[1.15] transition ease-in-out duration-500 "
+								alt=""
+							/>
 						</div>
 					</div>
 					<div className="relative w-[40%]">

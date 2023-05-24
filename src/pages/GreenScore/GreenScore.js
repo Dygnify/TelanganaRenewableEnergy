@@ -77,8 +77,8 @@ const GreenScore = () => {
 	return (
 		<div>
 			<div>
-				<div className="mt-4 box-shadow4 gradient-right border border-[#ccc2ff8f] w-4/5 mx-auto flex flex-col rounded-md p-4">
-					<h2 className="text-center text-[1.6375rem] font-semibold text-[#93a2f8]  px-2 drop-shadow-md">
+				<div className="mt-4 box-shadow4 gradient-right border border-[#ccc2ff8f] w-4/5 mx-auto flex flex-col rounded-md p-4 pb-1">
+					<h2 className="text-center text-[1.6375rem] font-semibold text-[#8110FE]  px-2 drop-shadow-md">
 						Dygnify Green Score
 					</h2>
 					<div className="flex mt-4">
@@ -102,9 +102,9 @@ const GreenScore = () => {
 							/>
 						</div>
 					</div>
-					<div className="collapse collapse-arrow">
+					<div className="collapse collapse-arrow mt-1">
 						<input type="checkbox" className="peer" />
-						<p className="collapse-title mt-8 mb-4 text-left text-[#475569] font-semibold text-[18px] drop-shadow-lg">
+						<p className="collapse-title text-left text-[#475569] font-semibold text-[18px] drop-shadow-lg">
 							Key Highlights
 						</p>
 						<div className="collapse-content flex flex-col gap-y-2">
