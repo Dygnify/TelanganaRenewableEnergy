@@ -5,6 +5,8 @@ import ConfigureTable from "./ConfigureTable";
 import { useOutletContext } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
 import parse from "html-react-parser";
+import sdgImg1 from "../../images/SDG7.png";
+import sdgImg2 from "../../images/SDG13.png";
 
 const demoInfo = [
   {
@@ -37,21 +39,6 @@ const Tab1 = () => {
     console.log("total score: ", totalScore);
   }, [totalScore]);
 
-  // delay function
-  // useEffect(() => {
-  // 	setTimeout(() => {
-  // 		setIsLoader(true);
-  // 	}, 1000);
-  // }, [finalScore]);
-
-  // show loader upto 2 seconds.
-  // useEffect(() => {
-  // 	if (isLoader) {
-  // 		setTimeout(() => {
-  // 			setIsLoader(false);
-  // 		}, 2000);
-  // 	}
-  // }, [isLoader]);
   return (
     <div>
       <div className="mx-auto flex flex-col rounded-md">
@@ -82,12 +69,28 @@ const Tab1 = () => {
                 </p>
               </div>
             ))}
+            <div className="flex justify-between">
+              <div className="">
+                <img
+                  src={sdgImg1}
+                  className="img-border hover:scale-[1.06] transition ease-in-out duration-500 w-[90%]"
+                  alt=""
+                />
+              </div>
+              <div className="flex justify-end">
+                <img
+                  src={sdgImg2}
+                  className="img-border hover:scale-[1.06] transition ease-in-out duration-500 w-[90%]"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
           <div className="relative w-[40%]">
             <div
               className={`${
                 isLoader && "blur-md"
-              }  h-full  flex justify-center p-[2px]  rounded-lg  hover:scale-[1.06] transition ease-in-out duration-700 box-shadow4 bg-[#fffffe]`}
+              }  flex justify-center p-[2px]  rounded-lg  hover:scale-[1.06] transition ease-in-out duration-700 box-shadow4 bg-[#fffffe]`}
             >
               <MyGaugeChart totalScore={totalScore} />
             </div>

@@ -90,6 +90,7 @@ const ConfigureTable = ({ tableData, setTotalScore, setFinalScore, tab}) => {
 											<div className="">
 												<RangeSlider
 													id={data.id}
+													tab={tab}
 													rangeValue={data.weightage}
 													onChange={
 														handleSliderChange
@@ -99,18 +100,12 @@ const ConfigureTable = ({ tableData, setTotalScore, setFinalScore, tab}) => {
 										</td>
 										<td className="p-2 w-2/12">
 											<div className="text-lg text-center">
-												{/* {(rangeValue[data.id] *
-													data.value) /
-												100
-													? (rangeValue[data.id] *
-															data.value) /
-													  100
-													: 0} */}
 													{(data.score).toFixed(2)}
 											</div>
 										</td>
 									</tr>
 								))}
+								
 							</tbody>
 						</table>
 					</div>

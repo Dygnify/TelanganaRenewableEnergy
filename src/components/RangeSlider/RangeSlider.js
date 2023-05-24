@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./RangeSlider.css";
 
-const RangeSlider = ({ id, rangeValue, onChange }) => {
+const RangeSlider = ({tab, id, rangeValue, onChange }) => {
 
 	useEffect(() => {
-		const sliderEl = document.querySelector(`.range-input${id}`);
-		const rangeV = document.getElementById(`rangeV${id}`);
+		const sliderEl = document.querySelector(`.range-input${tab+id}`);
+		const rangeV = document.getElementById(`${tab+id}`);
 
 		const progress = (rangeValue / sliderEl.max) * 100;
 
@@ -14,7 +14,7 @@ const RangeSlider = ({ id, rangeValue, onChange }) => {
 		const newPosition = 10 - newValue * 0.2;
 		rangeV.innerHTML = `<span>${newValue}%</span>`;
 		rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-	}, [id, rangeValue]);
+	}, [tab, id, rangeValue]);
 
 	const handleChange = (event) => {
 		const newValue = parseInt(event.target.value, 10);
@@ -25,9 +25,9 @@ const RangeSlider = ({ id, rangeValue, onChange }) => {
 
 	return (
 		<div className="range-slider relative">
-			<div class="range-value" id={`rangeV${id}`}></div>
+			<div class="range-value" id={`${tab+id}`}></div>
 			<input
-				className={`range-input${id}`}
+				className={`range-input${tab+id}`}
 				type="range"
 				min="00"
 				max="100"
