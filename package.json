@@ -12,6 +12,7 @@
     "d3-selection": "^3.0.0",
     "d3-tip": "^0.9.1",
     "daisyui": "^2.51.3",
+    "html-react-parser": "^3.0.16",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",
     "react-chartjs-2": "^5.2.0",
