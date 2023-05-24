@@ -5,7 +5,7 @@ import "../../components/Header.css";
 const GreenDashboard = () => {
 
 	return (
-		<nav className="box-shadow5 flex items-center py-2 px-6 text-[#fff] bg-[#ffffffff] subHeader-nav">
+		<nav className="box-shadow5 flex items-center py-2 px-6 text-[#fff] subHeader-nav">
 			<ul className="flex justify-center gap-1">
 				<NavLink
 					to="/greenScore/tab1"
