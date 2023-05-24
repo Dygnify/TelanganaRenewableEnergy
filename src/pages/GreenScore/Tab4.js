@@ -16,7 +16,7 @@ const tableData = [
   {
     id: 1,
     parameter: "PM Kusum yojana outlay increased",
-    value: 900,
+    value: 800,
     weightage: 25,
     score: 225,
   },
@@ -24,7 +24,7 @@ const tableData = [
     id: 2,
     parameter:
       "Government provides tax credits to offset a portion of the installation costs for solar panels.",
-    value: 900,
+    value: 750,
     weightage: 25,
     score: 225,
   },
@@ -32,7 +32,7 @@ const tableData = [
     id: 3,
     parameter:
       "Are there any legal structure related risks that can de-rail the project?",
-    value: 900,
+    value: 700,
     weightage: 50,
     score: 450,
   },
